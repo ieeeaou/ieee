@@ -1,8 +1,6 @@
-window.addEventListener('scroll', function() {
-    const header = document.querySelector('header');
-    if (window.scrollY > 0) {
-        header.classList.add('white-background');
-    } else {
-        header.classList.remove('white-background');
-    }
+const menuToggle = document.getElementById('mobile-menu');
+const navList = document.querySelector('.nav-list');
+
+menuToggle.addEventListener('click', () => {
+    navList.classList.toggle('show');
 });

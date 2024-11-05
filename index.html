@@ -1,93 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/favicon.png" type="x-icon">
-    <link rel="stylesheet" href="style.css">
-    <title>Tony's Portfolio</title>
-</head>
-<body>
-    <!-- header section -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IEEE AOU LEBANON</title>
+    <link
+      rel="shortcut icon"
+      href="images/1-removebg-preview.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <nav>
-            <div class="logo">
-                <img src="images/1-removebg-preview.png" alt="">
-            </div>
-            <input type="checkbox" id="sidebar-active">
-            <label for="sidebar-active" class="open-sidebar-button">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
-                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
-                </svg>
-            </label>            
-            <label for="sidebar-active" id="overlay"></label>
-            <div class="links-container">
-                <label for="sidebar-active" class="close-sidebar-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px">
-                        <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
-                    </svg>
-                </label>
-                <a href="#Home" class="active">Home</a>
-                <a href="#About">About</a>
-                <a href="#Portfolio">Events</a>
-                <a href="#Education">Education</a>
-                <a href="#Contact">Contact</a>
-            </div>
-        </nav>
+      <div class="logo">
+        <img src="images/1-removebg-preview.png" alt="Logo" />
+      </div>
+      <nav>
+        <div class="barsforresp">
+          <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+        <ul class="nav-list">
+          <li><a href="#home" class="active">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#events">EVENTS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
     </header>
-    <!-- home section -->
-    <section id="HOME">
-        <div class="home-content">
-            <h1>
-                We shape the future
-            </h1>
-            <h2>
-                we are deciding to helping achieve your goals
-            </h2>
-            <div class="button">
-                <button>learn More</button>
-            </div>
+
+    <section id="home" class="home-container">
+      <div class="home-section">
+        <h1>IEEE AOU</h1>
+        <h2>Advancing Technology for Humanity</h2>
+        <button onclick="alert('Button clicked!')">Get Started</button>
+      </div>
+    </section>
+
+    <section id="about" class="about-section">
+      <h2>About Us</h2>
+      <div class="about-columns">
+        <div class="column">
+          <img src="images/lllllllll.jpg" alt="Image 1" />
+          <h3>Driving Standards for Innovation          </h3>
+          <p>
+            One of the core strengths of IEEE is its development of industry
+            standards that facilitate interoperability and enhance safety across
+            various sectors. IEEE standards, such as those for Ethernet (IEEE
+            802.3) and Wi-Fi (IEEE 802.11), are critical to the functioning of
+            modern communication systems. These standards not only ensure that
+            products and services are of high quality but also promote the
+            seamless integration of technologies. By creating a framework for
+            standardization, IEEE plays a vital role in driving advancements
+            that improve efficiency and effectiveness in technological
+            applications.
+          </p>
+        </div>
+        <div class="column">
+          <img src="images/uuuuuuuuuu.jpg" alt="Image 2" />
+          <h3>Empowering Professionals through Education
+
+          </h3>
+          <p>
+            In addition to its focus on standards, IEEE is heavily involved in
+            education and professional development. The organization provides a
+            wealth of resources, including conferences, workshops, webinars, and
+            access to a vast repository of technical literature. These
+            initiatives are designed to empower members with the latest
+            knowledge and skills, keeping them at the forefront of their fields.
+            Furthermore, IEEE promotes lifelong learning, encouraging
+            professionals to continuously enhance their expertise in an
+            ever-changing technological landscape.
+          </p>
+        </div>
+        <div class="column">
+          <img
+          src="images/kkkkkkkk.jpg"
+            alt="Image 3"
+          />
+          <h3>Championing Diversity and Inclusion in STEM
+
+          </h3>
+          <p>
+            IEEE is also committed to fostering diversity and inclusion within
+            the engineering and technology sectors. The organization actively
+            supports initiatives aimed at increasing the participation of
+            underrepresented groups in STEM fields, recognizing that a diverse
+            workforce drives innovation and creativity. Through outreach
+            programs, mentorship opportunities, and community engagement, IEEE
+            strives to inspire the next generation of engineers and
+            technologists, ensuring that the benefits of technology are
+            accessible to all. By championing these values, IEEE not only
+            advances technology but also contributes to a more equitable
+            society.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="ieee-aou" class="ieee-aou-section">
+        <div class="ieee-aou-container">
+      <div class="ieee-aou-content">
+        <h2>IEEE-AOU Section</h2>
+        <p>
+            Arab Open University (AOU) is a pioneering, non-profit higher education institution with campuses across the Arab world, dedicated to providing quality education that is accessible, flexible, and innovative. Established in partnership with the Open University in the United Kingdom, AOU follows an open learning model, making it accessible to a wide range of students, including those balancing education with professional or personal responsibilities. Offering undergraduate and postgraduate programs across disciplines like business, computer science, and education, AOU integrates online resources with in-person learning to foster an inclusive and supportive academic environment. The university's mission focuses on empowering students through affordable, high-quality education that enhances professional skills and promotes lifelong learning, driving socio-economic development across the Arab region.
+        </p>
+      </div>
+      <img
+        src="images/1.png"
+        alt="IEEE-AOU Image"
+        class="ieee-aou-image"
+      />
         </div>
     </section>
-    <!-- about section -->
-     <section id="ABOUT">
-        <div class="about-container">
-            <div class="card">
-            <img src="images/uuuuuuuuuu.jpg">
-             <h2>
-                Driving Standards for Innovation
-            </h2>
-             <p>
-                One of the core strengths of IEEE is its development of industry standards that facilitate interoperability and enhance safety across various sectors. IEEE standards, such as those for Ethernet (IEEE 802.3) and Wi-Fi (IEEE 802.11), are critical to the functioning of modern communication systems. These standards not only ensure that products and services are of high quality but also promote the seamless integration of technologies. By creating a framework for standardization, IEEE plays a vital role in driving advancements that improve efficiency and effectiveness in technological applications.             </p>
-            </div>
-            <div class="card">
-             <img src="images/lllllllll.jpg"/>
-             <h2>
-                Empowering Professionals through Education
-            </h2>
-             <p>
-                In addition to its focus on standards, IEEE is heavily involved in education and professional development. The organization provides a wealth of resources, including conferences, workshops, webinars, and access to a vast repository of technical literature. These initiatives are designed to empower members with the latest knowledge and skills, keeping them at the forefront of their fields. Furthermore, IEEE promotes lifelong learning, encouraging professionals to continuously enhance their expertise in an ever-changing technological landscape.             </p>
-            </div>
-            <div class="card">
-             <img src="images/happy-manager-leads-a-meeting-in-the-office-scaled.jpg"/>
-             <h2>
-             Championing Diversity and Inclusion in STEM
-            </h2>
-             <p>
-                IEEE is also committed to fostering diversity and inclusion within the engineering and technology sectors. The organization actively supports initiatives aimed at increasing the participation of underrepresented groups in STEM fields, recognizing that a diverse workforce drives innovation and creativity. Through outreach programs, mentorship opportunities, and community engagement, IEEE strives to inspire the next generation of engineers and technologists, ensuring that the benefits of technology are accessible to all. By championing these values, IEEE not only advances technology but also contributes to a more equitable society.             </p>
-            </div>
-           </div>
-     </section>
-     <!-- Overview IEEE -->
-      <section id="IEEE">
-        <div class="ieee-container">
-            <img src="" alt="">
-            <div class="ieee-aou-overview">
-                <h1>Overview</h1>
-            </div>
+
+    <section id="ieee" class="ieee-section">
+        <div class="ieee-section-container">
+      <img src="images/ieeelogo.png" alt="IEEE Image" class="ieee-image" />
+      <div class="ieee-content">
+        <h2>IEEE Section</h2>
+        <p>
+            IEEE Lebanon Section is an active branch of the Institute of Electrical and Electronics Engineers, supporting engineers, researchers, and students in Lebanon. Since its establishment, IEEE Lebanon has been dedicated to fostering technological innovation, professional development, and networking among Lebanese professionals and students in fields like electrical engineering, computer science, and telecommunications. The section organizes conferences, workshops, and events to provide members with learning and collaboration opportunities, keeping them engaged with global technological trends. With numerous student branches in Lebanese universities, IEEE Lebanon plays a key role in encouraging the next generation of engineers, promoting research, and supporting local advancements in technology to drive positive change within the country.
+        </p>
+      </div>
         </div>
-      </section>
-    
-     <script src="script.js"></script>
-</body>
+    </section>
+
+    <footer>
+        <nav>
+          <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#events">EVENTS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+        <p>&copy; 2023 Your Company. All rights reserved.</p>
+        <p>Contact us: ieeeaou@gmail.com.com | Lebanon</p>
+      </footer>      
+
+    <script src="script.js"></script>
+  </body>
 </html>
