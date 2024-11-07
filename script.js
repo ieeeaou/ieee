@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   
     sr.reveal('.ieee-section-container', {
-      origin: 'top',
+      origin: 'left',
     });
   });
   
