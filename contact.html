@@ -5,6 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IEEE AOU LEBANON - CONTACT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <link
       rel="shortcut icon"
       href="images/1-removebg-preview.png"
@@ -17,7 +19,9 @@
 
   <body>
 
-    <div id="preloader"></div>
+    <div id="preloader">
+      <img src="images/ieeegifxback.gif" alt="">
+    </div>
 
     <header>
       <div class="logo">
@@ -72,26 +76,33 @@
 
     <!-- Footer -->
     <footer>
-        <nav>
+      <nav>
           <ul>
-            <li><a href="#home">HOME</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#events">EVENTS</a></li>
-            <li><a href="#contact">CONTACT</a></li>
+              <li><a href="#home">HOME</a></li>
+              <li><a href="#about">ABOUT</a></li>
+              <li><a href="#events">EVENTS</a></li>
+              <li><a href="#contact">CONTACT</a></li>
           </ul>
-        </nav>
-        <p>&copy; 2024 AOU Arab Open University || All rights reserved.</p>
-        <p>Contact us: ieeeaou@gmail.com | Lebanon</p>
-    </footer>  
-
+      </nav>
+      <div class="social-media">
+          <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <p>&copy; 2024 AOU Arab Open University || All rights reserved.</p>
+      <p>Contact us: ieeeaou@gmail.com | Lebanon</p>
+  </footer>
 
     <script>
       var loader = document.getElementById("preloader");
-      window.addEventListener("load", function(){
-        loader.style.display = "none";
-      })
+      window.addEventListener("load", function () {
+        loader.classList.add("fade-out");
+        setTimeout(function () {
+          loader.style.display = "none";
+        }, 500);
+      });
     </script>
-
 
   </body>
 </html>

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,14 +9,16 @@
       href="images/1-removebg-preview.png"
       type="image/x-icon"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css" />
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="script.js"></script>
   </head>
 
   <body>
-
-    <div id="preloader"></div>
+    <div id="preloader">
+      <img src="images/ieeegifxback.gif" alt="">
+    </div>
 
     <header>
       <div class="logo">
@@ -34,12 +35,14 @@
         <ul class="nav-list">
           <li><a href="index.html" class="active">HOME</a></li>
           <li><a href="about.html">ABOUT</a></li>
-          <li><a onclick="alert('We Don\'t have events right now')">EVENTS</a></li>
+          <li>
+            <a onclick="alert('We Don\'t have events right now')">EVENTS</a>
+          </li>
           <li><a href="contact.html">CONTACT</a></li>
         </ul>
       </nav>
     </header>
-<!-- home section -->
+    <!-- home section -->
     <section id="home" class="home-container">
       <div class="home-section">
         <h1>IEEE AOU</h1>
@@ -47,41 +50,68 @@
         <button>Get Started</button>
       </div>
     </section>
-<!-- ieee section -->
-<section id="ieee" class="ieee-section">
-  <div class="ieee-section-container">
-    <img src="images/ieeelogo.png" alt="IEEE Logo" class="ieee-image" />
-    <div class="ieee-content">
-      <h2>IEEE Lebanon Section</h2>
-      <p>
-        IEEE Lebanon Section is an active branch of the Institute of Electrical and Electronics Engineers, supporting engineers, researchers, and students in Lebanon. Since its establishment, IEEE Lebanon has been dedicated to fostering technological innovation, professional development, and networking among Lebanese professionals and students in fields like electrical engineering, computer science, and telecommunications. The section organizes conferences, workshops, and events to provide members with learning and collaboration opportunities, keeping them engaged with global technological trends. With numerous student branches in Lebanese universities, IEEE Lebanon plays a key role in encouraging the next generation of engineers, promoting research, and supporting local advancements in technology to drive positive change within the country.
-      </p>
-    </div>
-  </div>
-</section>
-<!-- ieee aou section -->
-<section id="ieee-aou" class="ieee-aou-section">
-  <div class="ieee-aou-container">
-<div class="ieee-aou-content">
-  <h2>AOU Section</h2>
-  <p>
-    <font color="black">Arab Open University (AOU) is a pioneering, non-profit higher education institution with campuses across the Arab world</font>, dedicated to providing quality education that is accessible, flexible, and innovative. <font color="black">Established in partnership with the Open University in the United Kingdom</font>, AOU follows an open learning model, making it accessible to a wide range of students, including those balancing education with professional or personal responsibilities. Offering undergraduate and postgraduate programs across disciplines like business, computer science, and education, AOU integrates online resources with in-person learning to foster an inclusive and supportive academic environment. The university's mission focuses on empowering students through affordable, high-quality education that enhances professional skills and promotes lifelong learning, driving socio-economic development across the Arab region.
-  </p>
-</div>
-<img
-  src="images/1.png"
-  alt="IEEE-AOU Image"
-  class="ieee-aou-image"
-/>
-  </div>
-</section>
-<!-- about section -->
+    <!-- ieee section -->
+    <section id="ieee" class="ieee-section">
+      <div class="ieee-section-container">
+        <img src="images/ieeelogo.png" alt="IEEE Logo" class="ieee-image" />
+        <div class="ieee-content">
+          <h2>IEEE Lebanon Section</h2>
+          <p>
+            IEEE Lebanon Section is an active branch of the Institute of
+            Electrical and Electronics Engineers, supporting engineers,
+            researchers, and students in Lebanon. Since its establishment, IEEE
+            Lebanon has been dedicated to fostering technological innovation,
+            professional development, and networking among Lebanese
+            professionals and students in fields like electrical engineering,
+            computer science, and telecommunications. The section organizes
+            conferences, workshops, and events to provide members with learning
+            and collaboration opportunities, keeping them engaged with global
+            technological trends. With numerous student branches in Lebanese
+            universities, IEEE Lebanon plays a key role in encouraging the next
+            generation of engineers, promoting research, and supporting local
+            advancements in technology to drive positive change within the
+            country.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- ieee aou section -->
+    <section id="ieee-aou" class="ieee-aou-section">
+      <div class="ieee-aou-container">
+        <div class="ieee-aou-content">
+          <h2>AOU Section</h2>
+          <p>
+            <font color="black"
+              >Arab Open University (AOU) is a pioneering, non-profit higher
+              education institution with campuses across the Arab world</font
+            >, dedicated to providing quality education that is accessible,
+            flexible, and innovative.
+            <font color="black"
+              >Established in partnership with the Open University in the United
+              Kingdom</font>
+            , AOU follows an open learning model, making it accessible to a
+            wide range of students, including those balancing education with
+            professional or personal responsibilities. Offering undergraduate
+            and postgraduate programs across disciplines like business, computer
+            science, and education, AOU integrates online resources with
+            in-person learning to foster an inclusive and supportive academic
+            environment. The university's mission focuses on empowering students
+            through affordable, high-quality education that enhances
+            professional skills and promotes lifelong learning, driving
+            socio-economic development across the Arab region.
+          </p>
+        </div>
+        <img src="images/1.png" alt="IEEE-AOU Image" class="ieee-aou-image" />
+      </div>
+    </section>
+
+    <!-- about section -->
     <section id="about" class="about-section">
       <h2>About Us</h2>
       <div class="about-columns">
         <div class="column">
           <img src="images/lllllllll.jpg" alt="Image 1" />
-          <h3>Driving Standards for Innovation          </h3>
+          <h3>Driving Standards for Innovation</h3>
           <p>
             One of the core strengths of IEEE is its development of industry
             standards that facilitate interoperability and enhance safety across
@@ -97,9 +127,7 @@
         </div>
         <div class="column">
           <img src="images/uuuuuuuuuu.jpg" alt="Image 2" />
-          <h3>Empowering Professionals through Education
-
-          </h3>
+          <h3>Empowering Professionals through Education</h3>
           <p>
             In addition to its focus on standards, IEEE is heavily involved in
             education and professional development. The organization provides a
@@ -113,13 +141,8 @@
           </p>
         </div>
         <div class="column">
-          <img
-          src="images/kkkkkkkk.jpg"
-            alt="Image 3"
-          />
-          <h3>Championing Diversity and Inclusion in STEM
-
-          </h3>
+          <img src="images/kkkkkkkk.jpg" alt="Image 3" />
+          <h3>Championing Diversity and Inclusion in STEM</h3>
           <p>
             IEEE is also committed to fostering diversity and inclusion within
             the engineering and technology sectors. The organization actively
@@ -136,26 +159,35 @@
         </div>
       </div>
     </section>
-<!-- footer -->
+    <!-- footer -->
     <footer>
-        <nav>
+      <nav>
           <ul>
-            <li><a href="#home">HOME</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#events">EVENTS</a></li>
-            <li><a href="#contact">CONTACT</a></li>
+              <li><a href="#home">HOME</a></li>
+              <li><a href="#about">ABOUT</a></li>
+              <li><a href="#events">EVENTS</a></li>
+              <li><a href="#contact">CONTACT</a></li>
           </ul>
-        </nav>
-        <p>&copy; 2024 AOU Arab Open University || All rights reserved.</p>
-        <p>Contact us: ieeeaou@gmail.com.com | Lebanon</p>
-      </footer>
-      
-      <script>
-        var loader = document.getElementById("preloader");
-        window.addEventListener("load", function(){
+      </nav>
+      <div class="social-media">
+          <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <p>&copy; 2024 AOU Arab Open University || All rights reserved.</p>
+      <p>Contact us: ieeeaou@gmail.com | Lebanon</p>
+  </footer>
+
+    <script>
+      var loader = document.getElementById("preloader");
+      window.addEventListener("load", function () {
+        loader.classList.add("fade-out");
+        setTimeout(function () {
           loader.style.display = "none";
-        })
-      </script>
-      
+        }, 500);
+      });
+    </script>
+
   </body>
 </html>
