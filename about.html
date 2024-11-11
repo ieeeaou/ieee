@@ -226,10 +226,15 @@
       function displayCountryTooltip(country) {
         tooltip.textContent = country.getAttribute("data-name");
     
-        // Position tooltip near each country's pin based on its data
+        // Get the country pin's position relative to the viewport
         const rect = country.getBoundingClientRect();
-        tooltip.style.left = window.scrollX + rect.left - 85 + "px";
-        tooltip.style.top = window.scrollY + rect.top - 175 + "px";
+    
+        // Check if the screen width is mobile (less than 768px) or desktop (768px and up)
+        const isMobile = window.innerWidth < 768;
+    
+        // Adjust position based on whether the layout is mobile or desktop
+        tooltip.style.left = `${window.scrollX + rect.left - (isMobile ? tooltip.offsetWidth / 1 : tooltip.offsetWidth + 20)}px`;
+        tooltip.style.top = `${window.scrollY + rect.top - (isMobile ? tooltip.offsetHeight + 50 : 175)}px`;
         tooltip.style.display = "block";
       }
     
@@ -263,6 +268,11 @@
       // Initialize the tooltip cycling
       startTooltipCycle();
     </script>
+    
+    
+    
+    
+
     
 
     <script>
