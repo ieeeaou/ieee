@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 
 :root {
@@ -10,6 +11,10 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
   font-family: Arial, sans-serif;
   background: url("images/background design.png");
   background-attachment: fixed;
@@ -17,6 +22,8 @@ body {
   background-size: cover;
   letter-spacing: 2px;
 }
+
+/* header */
 
 header {
   display: flex;
@@ -102,117 +109,60 @@ nav {
   padding: 20px 50px;
 }
 
-/* ieee section */
-.ieee-section {
-  margin: 100px 0px;
-  padding: 20px;
+/* join section */
+
+main {
+  flex: 1;
 }
 
-.ieee-section-container {
-  background-color: var(--color-1);
-  border-radius: 15px;
-  justify-content: space-between;
+#join-section {
+  padding: 100px 20px;
+  margin-top: 120px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+#join-section .container {
+  display: flex;
+  justify-content: center;
   align-items: center;
-  padding: 40px;
-  max-width: 1200px;
-  margin: auto;
-  gap: 20px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
-.ieee-section-container:hover {
-  transform: scale(1.02);
+.membership-card {
+  width: 800px;
+  background-color: var(--color-2);
+  padding: 50px;
+  border: 3px solid var(--color-1);
+  border-radius: 5px;
 }
 
-.ieee-content {
-  flex-basis: 70%;
-  color: var(--color-2);
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.6;
-}
-
-.ieee-content h2 {
-  color: var(--color-2);
-  font-size: 32px;
-  font-weight: 600;
+.membership-card h2 {
+  color: var(--color-1);
   margin-bottom: 20px;
-  border-bottom: 3px solid var(--color-2);
-  padding-bottom: 8px;
+  font-weight: bold;
+  font-size: 40px;
 }
 
-/* team section */
+.membership-card p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
 
-.team-section {
-    padding: 60px 20px;
-    margin: 100px 0;
-    border-radius: 15px;
-    text-align: center;
-  }
-  
-  .team-section h2 {
-    color: var(--color-1);
-    text-align: center;
-    margin-bottom: 40px;
-    font-size: 32px;
-    font-weight: 600;
-    border-bottom: 3px solid var(--color-1);
-    display: inline-block;
-    padding-bottom: 10px;
-  }
-  
-  .team-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
-    max-width: 1200px;
-    margin: auto;
-  }
-  
-  .team-member {
-    flex: 1 1 calc(50% - 20px);
-    background-color: #ffffff;
-    border-radius: 15px;
-    padding: 30px;
-    text-align: center;
-    color: #333;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .team-member:hover {
-    transform: scale(1.02);
-  }
-  
-  .team-image {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-bottom: 15px;
-    object-fit: cover;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .team-member h3 {
-    font-size: 22px;
-    font-weight: 600;
-    color: var(--color-1);
-    margin-bottom: 10px;
-  }
-  
-  .team-member h4 {
-    font-size: 16px;
-    color: #666;
-    margin-bottom: 10px;
-  }
-  
-  .team-member p {
-    color: #555;
-    line-height: 1.6;
-    font-size: 18px;
-    font-weight: 500;
-  }
+.membership-card button {
+  color: var(--color-2);
+  background-color: var(--color-1);
+  padding: 20px 40px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.membership-card button a{
+  color: var(--color-2);
+}
 
 /* footer */
 
@@ -222,6 +172,7 @@ footer {
   padding: 50px 20px;
   text-align: center;
   font-family: Arial, sans-serif;
+  margin-top: auto;
 }
 
 footer nav ul {
@@ -270,15 +221,28 @@ footer p {
 
 
 
-/* reponsive screen */
 
-@media (max-width: 480px) {
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive design */
+
+@media (max-width: 768px) {
   /* header */
-    
+
   .menu-toggle {
     display: flex;
     flex-direction: column;
-    cursor: pointer;  }
+    cursor: pointer;
+  }
 
   .nav-list {
     background-color: var(--color-1);
@@ -295,7 +259,7 @@ footer p {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
-    width: 150px;
+    width: 175px;
   }
 
   .nav-list li {
@@ -307,7 +271,7 @@ footer p {
     text-decoration: none;
   }
 
-  .nav-list li a.active{
+  .nav-list li a.active {
     color: var(--color-2);
     background-color: var(--color-1);
     border-radius: 5px;
@@ -315,52 +279,33 @@ footer p {
   }
 
   .nav-list.show {
+    width: 150px;
     opacity: 1;
     visibility: visible;
   }
 
-  /* about section */
-
-  .about-section,
-  .history-section,
-  .team-section {
-    padding: 30px;
-  }
-
-  .team-member {
-    flex-basis: 100%;
-  }
-
-  .team-member h3 {
-    font-size: 18px;
-  }
-
-  .team-member h4 {
-    font-size: 14px;
-  }
-
-  .team-member p {
-    font-size: 13px;
-  }
-
   /* footer section */
-
   footer p {
     font-size: 12px;
-}
+  }
 
-footer nav ul {
+  footer nav ul {
     flex-direction: column;
-}
+  }
 
-footer nav ul li {
+  footer nav ul li {
     margin: 10px 0;
-}
-}
+  }
 
+  /* join section */
+
+  #join-section {
+    margin-top: 50px;
+  }
+}
 
 #preloader {
-  background: url('images/background design.png') no-repeat;
+  background: url("images/background design.png") no-repeat;
   background-size: cover;
   height: 100vh;
   width: 100%;
@@ -372,7 +317,7 @@ footer nav ul li {
   align-items: center;
 }
 
-#preloader img{
+#preloader img {
   height: 50%;
 }
 
@@ -381,8 +326,8 @@ footer nav ul li {
   transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
-@media only screen and (max-width:768px) {
-  #preloader{
+@media only screen and (max-width: 768px) {
+  #preloader {
     height: 130vh;
   }
 }
