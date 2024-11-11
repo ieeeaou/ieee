@@ -220,23 +220,50 @@
     <script>
       const countries = document.querySelectorAll(".country-pin");
       const tooltip = document.getElementById("tooltip");
-
-      countries.forEach((country) => {
-        country.addEventListener("mouseenter", function (e) {
-          tooltip.textContent = country.getAttribute("data-name");
-          tooltip.style.display = "block";
+      let currentIndex = 0;
+      let intervalId;
+    
+      function displayCountryTooltip(country) {
+        tooltip.textContent = country.getAttribute("data-name");
+    
+        // Position tooltip near each country's pin based on its data
+        const rect = country.getBoundingClientRect();
+        tooltip.style.left = window.scrollX + rect.left - 85 + "px";
+        tooltip.style.top = window.scrollY + rect.top - 175 + "px";
+        tooltip.style.display = "block";
+      }
+    
+      function cycleTooltips() {
+        const country = countries[currentIndex];
+        displayCountryTooltip(country);
+        currentIndex = (currentIndex + 1) % countries.length;
+      }
+    
+      // Start the tooltip cycle every 0.5 seconds
+      function startTooltipCycle() {
+        intervalId = setInterval(cycleTooltips, 500);
+      }
+    
+      function stopTooltipCycle() {
+        clearInterval(intervalId);
+      }
+    
+      // Attach hover events to each country pin
+      countries.forEach(country => {
+        country.addEventListener("mouseenter", () => {
+          stopTooltipCycle();
+          displayCountryTooltip(country);
         });
-
-        country.addEventListener("mousemove", function (e) {
-          tooltip.style.left = e.pageX - 75 + "px";
-          tooltip.style.top = e.pageY - 50 + "px";
-        });
-
-        country.addEventListener("mouseleave", function () {
+        country.addEventListener("mouseleave", () => {
           tooltip.style.display = "none";
+          startTooltipCycle();
         });
       });
+    
+      // Initialize the tooltip cycling
+      startTooltipCycle();
     </script>
+    
 
     <script>
       var loader = document.getElementById("preloader");
