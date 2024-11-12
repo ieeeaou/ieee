@@ -51,6 +51,7 @@
     <section id="join-form">
         <div class="form-container">
             <h1>Personal Information JOIN Form</h1>
+            <h2 id="membershipTitle">Standard JOIN</h2>
             <form action="#" method="post">
 
                 <div class="form-group">
@@ -107,7 +108,6 @@
                         <option value="Antelias">Antelias</option>
                         <option value="Badarro">Badarro</option>
                         <option value="Tripoli">Tripoli</option>
-                        <option value="not-university">Not from University</option>
                     </select>
                 </div>
 
@@ -172,7 +172,7 @@
                     </select>
                 </div>
         
-                <button type="submit" class="submit-btn">Submit</button>
+                <button type="submit" class="submit-btn" onclick=" alert('Your Join form has been successfully submitted! Thank you for providing the necessary information. We will process your request and get back to you shortly')">Submit</button>
             </form>
         </div>
     </section>
@@ -203,6 +203,18 @@
       <p>&copy; 2024 AOU Arab Open University || All rights reserved.</p>
       <p>Contact us: ieeeaou@gmail.com | Lebanon</p>
     </footer>
+
+
+    <script>
+      function getQueryParameter(name) {
+          const urlParams = new URLSearchParams(window.location.search);
+          return urlParams.get(name);
+      }
+      const status = getQueryParameter('status');
+      if (status == 'premium') {
+          document.getElementById("membershipTitle").textContent = "Premium JOIN";
+      }
+  </script>
 
     <script>
         function toggleUniversityOptions() {

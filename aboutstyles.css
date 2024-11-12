@@ -97,6 +97,13 @@ nav {
   padding: 20px;
 }
 
+.nav-list li a:hover{
+  border-radius: 5px;
+  color: var(--color-2);
+  background-color: var(--color-1);
+  padding: 20px 20px;
+}
+
 .nav-list li a.active {
   border-radius: 5px;
   color: var(--color-2);
@@ -114,7 +121,7 @@ nav {
 #map-container {
   position: relative;
   width: 100%;
-  height: 70vh;
+  height: 80vh;
   background-image: url("images/2ndimagearabworld.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -134,7 +141,6 @@ svg {
   fill: var(--location-color);
   cursor: pointer;
   transition: transform 0.3s ease;
-  border: 3px solid black;
 }
 
 #tooltip {
@@ -145,15 +151,6 @@ svg {
   border-radius: 5px;
   display: none;
   pointer-events: none;
-}
-
-@media (max-width: 768px) {
-  #map-container {
-    height: 50vh;
-  }
-  #tooltip {
-    font-size: 12px;
-  }
 }
 
 /* ieee section */
@@ -194,6 +191,58 @@ svg {
   border-bottom: 3px solid var(--color-2);
   padding-bottom: 8px;
 }
+
+.ieee-content button{
+  margin-top: 20px;
+  color: var(--color-2);
+  background-color: transparent;
+  border: 0;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.continue-overlay {
+  display: none;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-1);
+  opacity: 1;
+  z-index: 40;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 50px;
+  overflow: auto;
+}
+
+.continue-overlay p {
+  color: var(--color-2);
+  margin: 20px;
+  max-height: 80vh;
+  overflow-y: auto;
+  padding-top: 1px;
+  padding-bottom: 100px;
+}
+
+.continue-overlay:target {
+  display: flex;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 40px;
+  color: white;
+  text-decoration: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+
 
 /* team section */
 
@@ -377,13 +426,22 @@ footer p {
 
   #aou-map{
     padding-top: 50px;
+    margin: 0 30px;
   }
 
-  .ieee-section{
-    margin: 20px 0px;
+  #map-container {
+    height: 50vh;
+  }
+
+  #tooltip {
+    font-size: 12px;
   }
 
   /* about section */
+
+  .ieee-section{
+    margin: 20px 0px 100px 0px;
+  }
 
   .about-section,
   .history-section,
