@@ -35,7 +35,7 @@
     left: 0;
     right: 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
+    z-index: 99;
     background-image: url("images/background design.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -152,14 +152,14 @@
 }
 
 .form-group input,
-.form-group select,
-.form-group textarea {
+.form-group select{
     width: 100%;
     padding: 10px;
     border: 2px solid #ddd;
     border-radius: 5px;
     font-size: 1em;
     color: var(--color-1);
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .form-group input[type="date"],
@@ -182,6 +182,13 @@
 .content {
     flex: 1;
     min-width: 45%;
+}
+
+.form-group label{
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--color-1);
+  margin-bottom: 8px;
 }
 
 
@@ -213,6 +220,17 @@
 
 .submit-btn:hover {
     background-color: #0056b3;
+}
+
+#result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  font-size: 20px;
+  margin-top: 20px;
+  text-align: center;
+  display: none;
 }
 
   /* footer */

@@ -52,7 +52,10 @@
         <div class="form-container">
             <h1>Personal Information JOIN Form</h1>
             <h2 id="membershipTitle">Standard JOIN</h2>
-            <form action="#" method="post">
+
+            <form method="POST" id="form">
+              <input type="hidden" name="access_key" value="cbe4e58b-5b63-425a-9926-e90636b5df5a">
+              <input type="hidden" name="subject" value="New IEEE JOIN FORM website">
 
                 <div class="form-group">
                     <div class="name-group">
@@ -76,6 +79,10 @@
                     <label for="father-name">Email Address:</label>
                     <input type="email" id="email-address" name="email-address" required>
                 </div>
+                <div class="form-group">
+                    <label for="father-name">Phone Number:</label>
+                    <input type="number" id="email-address" name="email-address" required>
+                </div>
         
                 <div class="form-group">
                     <label for="dob">Date of Birth:</label>
@@ -89,7 +96,7 @@
 
                 <div class="form-group">
                     <label for="aou-student">Are you an AOU University student?</label>
-                    <select id="aou-student" name="aou-student" onchange="toggleUniversityOptions()" style="background-color: white;" required>
+                    <select id="aou-student" name="aou-student" onchange="toggleUniversityOptions()" style="background-color: white;">
                         <option value="">Select</option>
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
@@ -98,22 +105,17 @@
         
                 <div class="form-group hidden" id="id-group">
                     <label for="uni-id">University Short ID:</label>
-                    <input type="text" id="uni-id" name="uni-id" required>
+                    <input type="text" id="uni-id" name="uni-id">
                 </div>
 
                 <div class="form-group hidden" id="branch-group">
-                    <label for="uni-branch">University Branch:</label>
+                    <label for="uni-branch" id="uni-branch">University Branch:</label>
                     <select id="uni-branch" name="uni-branch" style="background-color: white;">
                         <option value="">Select</option>
                         <option value="Antelias">Antelias</option>
                         <option value="Badarro">Badarro</option>
                         <option value="Tripoli">Tripoli</option>
                     </select>
-                </div>
-
-                <div class="form-group hidden" id="who-are-you-group">
-                    <label for="who-are-you">Who are you?</label>
-                    <textarea id="who-are-you" name="who-are-you" rows="3" placeholder="Please describe yourself"></textarea>
                 </div>
         
                 <div class="form-group">
@@ -172,10 +174,16 @@
                     </select>
                 </div>
         
-                <button type="submit" class="submit-btn" onclick=" alert('Your Join form has been successfully submitted! Thank you for providing the necessary information. We will process your request and get back to you shortly')">Submit</button>
+                <button type="submit" class="submit-btn">Submit</button>
+
+                <div id="result"></div>
+
             </form>
         </div>
     </section>
+
+    <script src="contactemail.js"></script>
+
     <!-- Footer -->
     <footer>
       <nav>
@@ -217,22 +225,7 @@
   </script>
 
     <script>
-        function toggleUniversityOptions() {
-            const isStudent = document.getElementById('aou-student').value;
-            const branchGroup = document.getElementById('branch-group');
-            const idGroup = document.getElementById('id-group');
-            const whoAreYouGroup = document.getElementById('who-are-you-group');
-            
-            if (isStudent === 'yes') {
-                idGroup.classList.remove('hidden');
-                branchGroup.classList.remove('hidden');
-                whoAreYouGroup.classList.add('hidden');
-            } else {
-                idGroup.classList.add('hidden');
-                branchGroup.classList.add('hidden');
-                whoAreYouGroup.classList.remove('hidden');
-            }
-        }
+
     </script>
 
     <script>
