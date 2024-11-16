@@ -129,6 +129,10 @@ nav {
   padding: 100px 20px;
 }
 
+.home-section img{
+  height: 10rem;
+}
+
 .home-section h1 {
   font-size: 60px;
   color: var(--color-1);
