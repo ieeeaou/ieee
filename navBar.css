@@ -155,3 +155,40 @@ nav {
       visibility: visible;
     }
 }
+
+
+
+
+
+
+ /* preloader */
+
+ #preloader {
+  background: url('images/background design.png') no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#preloader img {
+  height: 50%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+#preloader.fade-out {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+@media only screen and (max-width: 768px) {
+  #preloader {
+    height: 100vh;
+  }
+}
