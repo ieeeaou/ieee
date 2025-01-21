@@ -124,7 +124,7 @@ svg {
 .continue-overlay {
   display: none;
   position: fixed;
-  top: 80px;
+  top: 60px;
   left: 0;
   width: 100%;
   height: calc(100% - 80px);
@@ -155,8 +155,8 @@ svg {
 
 .close-btn {
   position: fixed;
-  top: 90px;
-  right: 30px;
+  top: 60px;
+  right: 20px;
   font-size: 32px;
   color: var(--color-2);
   text-decoration: none;
