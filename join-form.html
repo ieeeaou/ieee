@@ -26,25 +26,27 @@
     </div>
 
     <header>
-      <div class="logo">
-        <img src="images/1-removebg-preview.png" alt="Logo" />
+      <div class="header-name">
+        <a href="#HOME">
+          <img src="images/1-removebg-preview.png" alt="ieee logo" />
+        </a>
       </div>
+      <!-- Hamburger Menu -->
+      <input type="checkbox" id="menu-checkbox" class="menu-checkbox" />
+      <label for="menu-checkbox" class="menu-toggle">
+        <div></div>
+        <div></div>
+        <div></div>
+      </label>
+      <!-- Overlay screen -->
+      <label for="menu-checkbox" class="ALLSCREEN"></label>
       <nav>
-        <div class="barsforresp">
-          <div class="menu-toggle" id="mobile-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
-        </div>
-        <ul class="nav-list">
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="about.html">ABOUT</a></li>
-          <li>
-            <a onclick="alert('We Don\'t have events right now')">EVENTS</a>
-          </li>
-          <li><a href="join.html" class="active">JOIN</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="">Events</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -198,11 +200,8 @@
         </ul>
       </nav>
       <div class="social-media">
-        <a href="https://instagram.com" target="_blank"
+        <a href="https://www.instagram.com/ieee_aou_lebanon" target="_blank"
           ><i class="fab fa-instagram"></i
-        ></a>
-        <a href="https://linkedin.com" target="_blank"
-          ><i class="fab fa-linkedin-in"></i
         ></a>
       </div>
       <p>&copy; 2024 AOU Arab Open University || All rights reserved.</p>
