@@ -18,16 +18,14 @@ header {
   background-image: url('images/background design.png');
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;}
+  background-attachment: fixed;
+}
 
 .header-name img {
   cursor: pointer;
   width: 15%;
-  color: var(--color-2);
-  font-family: "Blanka", sans-serif;
-  text-align: center;
-  transition: color 0.3s;
 }
+
 .header-name a:hover {
   color: var(--hover-color);
 }

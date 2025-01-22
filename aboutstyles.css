@@ -127,7 +127,7 @@ svg {
   top: 60px;
   left: 0;
   width: 100%;
-  height: calc(100% - 80px);
+  height: calc(100% - 50px);
   background-color: rgba(0, 0, 0, 0.85);
   z-index: 40;
   justify-content: center;
