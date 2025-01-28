@@ -10,12 +10,8 @@
   }
   
   body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
     font-family: Arial, sans-serif;
-    background: url("images/background design.png");
+    background-image: linear-gradient(135deg, transparent 0%, transparent 6%,rgba(71, 71, 71,0.04) 6%, rgba(71, 71, 71,0.04) 22%,transparent 22%, transparent 100%),linear-gradient(45deg, transparent 0%, transparent 20%,rgba(71, 71, 71,0.04) 20%, rgba(71, 71, 71,0.04) 47%,transparent 47%, transparent 100%),linear-gradient(135deg, transparent 0%, transparent 24%,rgba(71, 71, 71,0.04) 24%, rgba(71, 71, 71,0.04) 62%,transparent 62%, transparent 100%),linear-gradient(45deg, transparent 0%, transparent 73%,rgba(71, 71, 71,0.04) 73%, rgba(71, 71, 71,0.04) 75%,transparent 75%, transparent 100%),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255));
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -25,12 +21,12 @@
   
 /* Form Container */
 
-#join-form{
-    padding: 100px 30px;
-    background-color: rgba(255, 255, 255, 0.8);
-    margin-top: 120px;
-    margin-bottom: 50px;
+#join-form {
+  padding: 100px 30px;
+  margin-top: 120px;
+  margin-bottom: 50px;
 }
+
 
 .form-container h1 {
     text-align: center;
@@ -64,6 +60,7 @@
     font-size: 1em;
     color: var(--color-1);
     font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
 }
 
 .form-group input[type="date"],
@@ -108,8 +105,21 @@
     margin-bottom: 20px;
 }
 
+.submit-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
 .submit-btn {
-    width: 100%;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+
+.submit-btn {
+    width: 20em;
     padding: 20px;
     margin-top: 50px;
     font-weight: bold;
@@ -119,14 +129,13 @@
     border-radius: 5px;
     font-size: 1em;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: all 0.4s ease;
 }
 
 .submit-btn:hover {
   background-color: var(--color-2);
   color: var(--color-1);
-  border: 1px solid var(--color-1);
-  transform: scale(1);
+  box-shadow: 4px 4px var(--color-1);
 }
 
 #result {
