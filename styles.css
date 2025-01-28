@@ -99,7 +99,7 @@ body {
 }
 
 .ieee-section-container {
-  background-color: var(--color-1);
+  background-color: var(--color-2);
   border-radius: 15px;
   display: flex;
   justify-content: space-between;
@@ -110,7 +110,7 @@ body {
   flex-wrap: wrap;
   gap: 20px;
   transition: transform 0.3s ease;
-  box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
 .ieee-section-container:hover {
@@ -126,21 +126,21 @@ body {
   margin-left: 20px;
 }
 
+.ieee-content h2 {
+  color: var(--color-1);
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  border-bottom: 3px solid var(--color-1);
+  padding-bottom: 8px;
+}
+
 .ieee-content {
   flex-basis: 70%;
   font-size: 18px;
   line-height: 1.6;
   font-weight: 500;
-  color: var(--color-2);
-}
-
-.ieee-content h2 {
-  color: var(--color-2);
-  font-size: 32px;
-  font-weight: 600;
-  margin-bottom: 20px;
-  border-bottom: 3px solid var(--color-2);
-  padding-bottom: 8px;
+  color: #555;
 }
 
 
@@ -182,7 +182,7 @@ body {
   font-size: 18px;
   line-height: 1.6;
   font-weight: 500;
-  color: var(--color-1);
+  color: #555;
 }
 
 .ieee-aou-content h2 {
