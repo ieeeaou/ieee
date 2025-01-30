@@ -54,7 +54,7 @@ body {
   text-align: left;
   margin-bottom: 10px;
   font-weight: bold;
-  font-size: 5em;
+  font-size: 4em;
 }
 
 .home-content-1 {
@@ -64,15 +64,36 @@ body {
   font-size: 3em;
 }
 
-.home-content-2 {
+.home-content-2 span {
+  display: inline-block;
   text-align: left;
-  margin-bottom: 30px;
   font-weight: bold;
-  font-size: 2em;
+  font-size: 1em;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: 
+    typing 4s steps(33) infinite, 
+    cursor .4s step-end infinite alternate;
+  border-right: 4px solid white;
 }
 
-.home-container a{
-  color: var(--color-1);
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.home-content-2{
+  margin-bottom: 20px;
 }
 
 .home-button {

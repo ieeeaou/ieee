@@ -24,5 +24,3 @@ document.addEventListener('DOMContentLoaded', () => {
     sr.reveal('.membership-card', { origin: 'bottom', });
   });
   
-
-
