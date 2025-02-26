@@ -1,0 +1,128 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IEEE AOU LEBANON - RENEW</title>
+    <link
+      rel="shortcut icon"
+      href="images/1-removebg-preview.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="renew-member.css" />
+    <link rel="stylesheet" href="navBar.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <div id="preloader">
+      <img src="images/ieeegifxback.gif" alt="" />
+    </div>
+
+    <header>
+      <div class="header-name">
+        <a href="#HOME">
+          <img src="images/1-removebg-preview.png" alt="ieee logo" />
+        </a>
+      </div>
+      <!-- Hamburger Menu -->
+      <input type="checkbox" id="menu-checkbox" class="menu-checkbox" />
+      <label for="menu-checkbox" class="menu-toggle">
+        <div></div>
+        <div></div>
+        <div></div>
+      </label>
+      <!-- Overlay screen -->
+      <label for="menu-checkbox" class="ALLSCREEN"></label>
+      <nav id="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li class="active"><a href="join.html">Renew</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- BODY HOME CONTENT -->
+
+    <section id="Home">
+      <div class="home-intoduction">
+        <p class="introduction-title">Intoduction</p>
+        <p class="intro-content">
+          Congratulations! You're just a click away from unlocking premium
+          features and enjoying our exclusive member perks. <br /><br />
+          To renew your membership, follow these steps:</p>
+      </div>
+      <div class="steps-to-renew">
+        <p class="steps-title">Steps</p>
+        <div class="steps-content">
+          <ul>
+            <li>
+              Go to
+              <a
+                href="https://services10.ieee.org/as/authorization.oauth2?response_type=code&client_id=PF_AS_FOR_PA&redirect_uri=https%3A%2F%2Fwww.ieee.org%2Fpa%2Foidc%2Fcb&state=eyJ6aXAiOiJERUYiLCJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiajRYM1NYMzVtVzBvN0JtZWUybHZPOFJGd0E0Iiwic3VmZml4IjoiWHZROUNHLjE3NDA3NDU1MTkifQ..S5QvYSX5GAVKVyHNuJueqQ.M3ajDDLamuDiSfvrpESnkRpf54ZIm5PgxHl5-bkj86WRmR73dl74_wSsy1YxdkW4D8DixsjE84oCn0CqXPfcX-ecd0FDdRuSLVKc8iyqhTmfZjvHCcW5DLaw3ILCr7SpCOax5plGIBxEiyxmWPSS5jf44ITf_lX-ibhc9__EbTw.NlVhmvmb9dM-ahA_67ecKg&nonce=ZTTSDWLZ59bI7wM57lP9e8_XIpZQgZA-7g_0P9ecpDE&acr_values=msp%20sts%20stm%20prf%20crt%20col%20otk%20cmc%20cmp%20spe&scope=openid%20profile%20address%20email%20phone&vnd_pi_requested_resource=https%3A%2F%2Fwww.ieee.org%2Fmembership-application%2Frenew.html%3Fcloseurl%3Dhttp%3A%2F%2Fwww.ieee.org%2Fmembership_services%2Fmembership%2Frenew%2Findex.html&vnd_pi_application_name=MembershipApplication"
+                >IEEE Renew website</a
+              >
+              to start your membership renewal.
+            </li>
+            <li>Sign in to your account.</li>
+            <li>
+              Check if the "IEEE Membership" option in your cart that display on the
+              right side. if not, add it.
+            </li>
+            <li>Click continue. . .</li>
+            <li>
+              When reaching the payment portal, ensure your status is set as an
+              "Undergraduate" student.
+            </li>
+            <li>
+              Double-check that the final checkout amount is
+              <b>$14.00</b> before proceeding.
+            </li>
+            <li>
+              Reach out our Chairperson
+              <a href="https://wa.me/+96179102509">Shaymaa Jawish</a> to
+              complete the registration process.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="social-media">
+        <a href="https://www.instagram.com/ieee_aou_lebanon" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+      </div>
+      <p>&copy; 2024 AOU Arab Open University || All rights reserved.</p>
+      <p>Contact us: ieeeaou@gmail.com | Lebanon</p>
+    </footer>
+
+    <script>
+      var loader = document.getElementById("preloader");
+      window.addEventListener("load", function () {
+        loader.classList.add("fade-out");
+        setTimeout(function () {
+          loader.style.display = "none";
+        }, 500);
+      });
+    </script>
+  </body>
+</html>
