@@ -69,10 +69,8 @@
             <li>Continue setting up your account until you reach the payment portal.</li>
             <li>Once you arrive at the payment portal, obtain your membership number.</li>
             <li>
-              Reach out our Chairperson
-              <a href="https://wa.me/96179102509?text=Hello%20Chaymaa%2C%20i%20hope%20you%20are%20fine%21%0Ai%20would%20like%20to%20complete%20the%20*JOIN*%20of%20the%20registration%20progress." target="_blank">
-                Shaymaa Jawish
-            </a>
+            Reach out our Chairperson
+            <a href="" id="messageShaymaa">Shaymaa Jawish</a>
             to complete the registration process.
             </li>
         </ul>
@@ -109,5 +107,15 @@
         }, 500);
       });
     </script>
+        <script>
+          const chairpersonCall = document.getElementById("messageShaymaa");
+          chairpersonCall.addEventListener("click", ()=>{
+            let message = "Hello Shaymaa, i hope you are fine!\nMy name is: ...\nI would like to complete the *JOIN* of the registration progress of IEEE AOU Student branch.";
+            let phonenumber = +96179102509;
+            let encodedMassage = encodeURIComponent(message);
+            let whatsappURL = `https://wa.me/${phonenumber}?text=${encodedMassage}`;
+            window.open(whatsappURL, '_blank');
+          });
+        </script>
   </body>
 </html>

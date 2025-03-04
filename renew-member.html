@@ -87,9 +87,7 @@
             </li>
             <li>
               Reach out to our Chairperson
-              <a href="https://wa.me/96179102509?text=Hello%20Chaymaa%2C%20i%20hope%20you%20are%20fine%21%0AI%20would%20like%20to%20complete%20the%20*RENEW*%20of%20the%20registration%20progress." target="_blank">
-                Shaymaa Jawish
-              </a>
+              <a href="" id="messageShaymaa">Shaymaa Jawish</a>
               to complete the registration process.
             </li>             
           </ul>
@@ -124,6 +122,17 @@
         setTimeout(function () {
           loader.style.display = "none";
         }, 500);
+      });
+    </script>
+
+    <script>
+      const chairpersonCall = document.getElementById("messageShaymaa");
+      chairpersonCall.addEventListener("click", ()=>{
+        let message = "Hello Shaymaa, i hope you are fine!\nMy name is: ...\nI would like to complete the *RENEW* of the registration progress of IEEE AOU Student branch.";
+        let phonenumber = +96179102509;
+        let encodedMassage = encodeURIComponent(message);
+        let whatsappURL = `https://wa.me/${phonenumber}?text=${encodedMassage}`;
+        window.open(whatsappURL, '_blank');
       });
     </script>
   </body>
