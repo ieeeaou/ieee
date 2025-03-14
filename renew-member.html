@@ -13,7 +13,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
     <link rel="stylesheet" href="renew-member.css" />
-    <link rel="stylesheet" href="navBar.css" />
+    <link rel="stylesheet" href="navBar.css">
+    <link rel="stylesheet" href="styles.css">
+
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="script.js"></script>
   </head>
@@ -26,7 +28,7 @@
     <header>
       <div class="header-name">
         <a href="#HOME">
-          <img src="images/1-removebg-preview.png" alt="ieee logo" />
+          <img src="images/logo-removebg-preview.png" alt="ieee logo" />
         </a>
       </div>
       <!-- Hamburger Menu -->
@@ -40,13 +42,13 @@
       <label for="menu-checkbox" class="ALLSCREEN"></label>
       <nav id="navbar">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="events.html">Events</a></li>
-          <li class="active"><a href="join.html">Renew</a></li>
-          <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
-      </nav>
+    </nav>    
     </header>
 
     <!-- BODY HOME CONTENT -->
@@ -125,15 +127,15 @@
       });
     </script>
 
-    <script>
-      const chairpersonCall = document.getElementById("messageShaymaa");
-      chairpersonCall.addEventListener("click", ()=>{
-             let message = "Hello Shaymaa, i hope you are fine!\n\nMy name is: ...\nMy IEEE Membership Number is: ...\n\nI would like to complete the *RENEW* of the registration progress of IEEE AOU Student branch.";
-        let phonenumber = +96179102509;
-        let encodedMassage = encodeURIComponent(message);
-        let whatsappURL = `https://wa.me/${phonenumber}?text=${encodedMassage}`;
-        window.open(whatsappURL, '_blank');
-      });
-    </script>
+<script>
+  const chairpersonCall = document.getElementById("messageShaymaa");
+  chairpersonCall.addEventListener("click", ()=>{
+    let message = "Hello Shaymaa, i hope you are fine!\n\nMy name is: ...\nMy IEEE Membership Number is: ...\n\nI would like to complete the *RENEW* of the registration progress of IEEE AOU Student branch.";
+    let phonenumber = +96179102509;
+    let encodedMassage = encodeURIComponent(message);
+    let whatsappURL = `https://wa.me/${phonenumber}?text=${encodedMassage}`;
+    window.open(whatsappURL, '_blank');
+  });
+</script>
   </body>
 </html>

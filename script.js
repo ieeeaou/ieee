@@ -12,15 +12,25 @@ document.addEventListener('DOMContentLoaded', () => {
     sr.reveal('.ieee-section-container', { origin: 'left' });
 
     sr.reveal('.team-member', {origin: 'left',});
-  
-    sr.reveal('.social-media a', {
-      origin: 'top',
-      distance: '30px',
-      duration: 1500,
-      interval: 100,
-    });
 
     sr.reveal('.join-video', { origin: 'left' });
     sr.reveal('.membership-card', { origin: 'bottom', });
   });
-  
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const faqItems = document.querySelectorAll(".faq-item");
+
+  faqItems.forEach((item) => {
+    const question = item.querySelector(".faq-question");
+    question.addEventListener("click", () => {
+      item.classList.toggle("active");
+
+      faqItems.forEach((otherItem) => {
+        if (otherItem != item) {
+          otherItem.classList.remove("active");
+        }
+      });
+    });
+  });
+});
