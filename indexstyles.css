@@ -190,6 +190,14 @@
 
   @media only screen and (max-width:768px){
 
+#Home{
+height: 50vh;
+}
+
+#Home::before {
+height: 50vh;
+}
+
     .home-content p{
       font-size: 2rem;
     }
