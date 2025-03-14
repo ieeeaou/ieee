@@ -191,11 +191,11 @@
   @media only screen and (max-width:768px){
 
 #Home{
-height: 50vh;
+height: 70vh;
 }
 
 #Home::before {
-height: 50vh;
+height: 70vh;
 }
 
     .home-content p{
