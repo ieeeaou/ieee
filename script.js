@@ -6,8 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
       interval: 100,
     });
   
-    sr.reveal('.home-container', { origin: 'top' });
-    sr.reveal('.about-section', { origin: 'left' });
+    sr.reveal('.home-content', { origin: 'left' });
+    sr.reveal('.about-content', { origin: 'left' });
     sr.reveal('.ieee-aou-section', { origin: 'bottom' });
     sr.reveal('.ieee-section-container', { origin: 'left' });
 
