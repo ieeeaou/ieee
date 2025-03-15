@@ -13,7 +13,6 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="contactstyles.css" />
-    <link rel="stylesheet" href="navBar.css">
     <link rel="stylesheet" href="styles.css">
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="script.js"></script>
@@ -25,31 +24,8 @@
       <img src="images/ieeegifxback.gif" alt="">
     </div>
 
-    <header>
-      <div class="header-name">
-        <a href="#HOME">
-          <img src="images/logo-removebg-preview.png" alt="ieee logo" />
-        </a>
-      </div>
-      <!-- Hamburger Menu -->
-      <input type="checkbox" id="menu-checkbox" class="menu-checkbox" />
-      <label for="menu-checkbox" class="menu-toggle">
-        <div></div>
-        <div></div>
-        <div></div>
-      </label>
-      <!-- Overlay screen -->
-      <label for="menu-checkbox" class="ALLSCREEN"></label>
-      <nav id="navbar">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="join.html">Join</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>    
-    </header>
+    <!-- Header Section -->
+    <header id="dynamic-header"></header>
 
     <!-- Contact Us Section -->
     <section id="contact">
@@ -96,25 +72,10 @@
 
   <script src="contactemail.js"></script>
 
-    <!-- Footer -->
-    <footer>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="events.html">Events</a></li>
-          <li><a href="join.html">Join</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="social-media">
-        <a href="https://www.instagram.com/ieee_aou_lebanon" target="_blank"
-          ><i class="fab fa-instagram"></i
-        ></a>
-      </div>
-      <p>&copy; 2024 AOU Arab Open University || All rights reserved.</p>
-      <p>Contact us: ieeeaou@gmail.com | Lebanon</p>
-  </footer>
+    <!-- footer -->
+    <footer id="dynamic-footer">
+      <script src="header&footer.js"></script>
+    </footer>
 
     <script>
       var loader = document.getElementById("preloader");

@@ -130,17 +130,17 @@ body {
 }
 
 .home-content .home-button {
-  margin-top: 30px;
   width: 20vh;
   height: 50px;
   font-size: 15px;
   font-weight: bold;
-  background-color: var(--color-2);
+  text-align: center;
+  background-color: var(--color-1);
   border: none;
-  color: var(--color-1);
+  color: #fff;
+  text-decoration: none;
   border-radius: 5px;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease;
 }
 
 .home-content .home-button:hover {
@@ -159,7 +159,7 @@ body {
   text-align: center;
   width: 100%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 30px;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -361,6 +361,13 @@ body {
   }
 
   .home-content .home-button {
+    margin-top: 30px;
+    width: 17vh;
+    height: 45px;
+    font-size: 12px;
+  }
+
+  .event-button a button{
     margin-top: 30px;
     width: 17vh;
     height: 45px;
