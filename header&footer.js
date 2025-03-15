@@ -1,4 +1,37 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const headerContainer = document.getElementById("dynamic-header");
+  const headerContent = `
+    <div class="header-name">
+      <a href="#HOME">
+        <img src="images/logo-removebg-preview.png" alt="ieee logo" />
+      </a>
+    </div>
+    <!-- Hamburger Menu -->
+    <input type="checkbox" id="menu-checkbox" class="menu-checkbox" />
+    <label for="menu-checkbox" class="menu-toggle">
+      <div></div>
+      <div></div>
+      <div></div>
+    </label>
+    <!-- Overlay screen -->
+    <label for="menu-checkbox" class="ALLSCREEN"></label>
+    <nav id="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  `;
+
+  headerContainer.innerHTML = headerContent;
+});
+
+// footer content
+
+document.addEventListener("DOMContentLoaded", () => {
     const footerContainer = document.getElementById("dynamic-footer");
       const footerContent = `
     <footer id="dynamic-footer">
@@ -30,34 +63,3 @@ document.addEventListener("DOMContentLoaded", () => {
     `;
       footerContainer.innerHTML = footerContent;
   });
-
-document.addEventListener("DOMContentLoaded", () => {
-  const headerContainer = document.getElementById("dynamic-header");
-  const headerContent = `
-    <div class="header-name">
-      <a href="#HOME">
-        <img src="images/logo-removebg-preview.png" alt="ieee logo" />
-      </a>
-    </div>
-    <!-- Hamburger Menu -->
-    <input type="checkbox" id="menu-checkbox" class="menu-checkbox" />
-    <label for="menu-checkbox" class="menu-toggle">
-      <div></div>
-      <div></div>
-      <div></div>
-    </label>
-    <!-- Overlay screen -->
-    <label for="menu-checkbox" class="ALLSCREEN"></label>
-    <nav id="navbar">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li><a href="join.html">Join</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  `;
-
-  headerContainer.innerHTML = headerContent;
-});
