@@ -135,9 +135,9 @@ body {
   font-size: 15px;
   font-weight: bold;
   text-align: center;
-  background-color: var(--color-2);
+  background-color: var(--color-1);
   border: none;
-  color: var(--color-1);
+  color: var(--color-2);
   text-decoration: none;
   border-radius: 5px;
   cursor: pointer;
@@ -145,8 +145,8 @@ body {
 }
 
 .home-content .home-button:hover {
-  background-color: var(--color-1);
-  color: var(--color-2);
+  background-color: var(--color-2);
+  color: var(--color-1);
   box-shadow: 4px 4px var(--color-2);
 }
 
