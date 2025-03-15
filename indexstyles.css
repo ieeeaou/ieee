@@ -140,6 +140,7 @@ body {
   color: var(--color-1);
   text-decoration: none;
   border-radius: 5px;
+  cursor: pointer;
   transition: all 0.3s ease;
 }
 
@@ -193,6 +194,7 @@ body {
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
+  cursor: pointer;
   transition: all 0.3s ease;
 }
 
