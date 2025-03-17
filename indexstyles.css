@@ -140,8 +140,9 @@ body {
   color: var(--color-2);
   text-decoration: none;
   border-radius: 5px;
-  cursor: pointer;
   transition: all 0.3s ease;
+  margin-top: 20px;
+  cursor: pointer;
 }
 
 .home-content .home-button:hover {
@@ -194,8 +195,8 @@ body {
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
-  cursor: pointer;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .event-button a button:hover {
@@ -245,7 +246,8 @@ body {
 /* FAQ Section */
 .faq-section {
   padding: 60px 0;
-  background: #fff;
+  background: var(--color-2);
+  margin-bottom: 50px;
 }
 
 .faqcontainer {
@@ -328,6 +330,41 @@ body {
   font-size: 1rem;
   line-height: 1.6;
   color: #555;
+}
+
+/* sponsors */
+#sponsors {
+  padding: 60px 0;
+  background: #fff;
+  margin-bottom: 50px;
+}
+
+.sponsors-section{
+  padding: 0px 30px;
+}
+
+.sponsors-section h2 {
+  font-size: 2rem;
+  text-align: left;
+  margin-bottom: 40px;
+  color: #022d58;
+  display: inline-block;
+  position: relative;
+}
+
+.sponsors-section h2::after {
+  content: '';
+  display: block;
+  width: 60%;
+  height: 2px;
+  background-color: var(--color-1);
+  margin-top: 10px;
+}
+
+.sponsor-logos img {
+  height: 50px;
+  margin: 0 40px;
+  vertical-align: middle;
 }
 
 
