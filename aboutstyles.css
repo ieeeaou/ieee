@@ -90,8 +90,20 @@ svg {
 
 .ieee-content h2 {
   font-size: 2rem;
-  color: #333;
-  margin-bottom: 15px;
+  text-align: left;
+  margin-bottom: 40px;
+  color: #022d58;
+  display: inline-block;
+  position: relative;
+}
+
+.ieee-content h2::after {
+  content: '';
+  display: block;
+  width: 60%;
+  height: 2px;
+  background-color: var(--color-1);
+  margin-top: 10px;
 }
 
 .ieee-content p {

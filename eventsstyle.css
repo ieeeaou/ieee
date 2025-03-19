@@ -105,7 +105,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 60px;
+  gap: 50px;
 }
 
 .event {
@@ -113,10 +113,21 @@ body {
   box-sizing: border-box;
 }
 
-.event-title {
-  font-size: 30px;
-  font-weight: bold;
-  border-bottom: 2px solid var(--color-1);
+.event h2 {
+  font-size: 1.5rem;
+  text-align: left;
+  color: #022d58;
+  display: inline-block;
+  position: relative;
+}
+
+.event h2::after {
+  content: '';
+  display: block;
+  width: 60%;
+  height: 2px;
+  background-color: var(--color-1);
+  margin-top: 10px;
 }
 
 .event-image-wrapper {
@@ -146,10 +157,6 @@ body {
 
   .event {
     width: 100%;
-  }
-
-  .event-title {
-    font-size: 24px;
   }
 
   .event-image-wrapper {
