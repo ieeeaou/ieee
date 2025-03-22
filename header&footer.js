@@ -46,14 +46,9 @@ document.addEventListener("DOMContentLoaded", () => {
         </ul>
       </nav>
       <div class="social-media">
-        IEEE:
-        <a href="https://www.instagram.com/ieee_aou_lebanon" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://whatsapp.com/channel/0029VavRghFFCCoO0GJ0ca2B" target="_blank"><i class="fab fa-whatsapp"></i></a>
-      </div>
-      <div class="social-media">
         AOU:
         <a href="https://www.instagram.com/aou_lebanon" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://web.aou.edu.lb/Pages/default.aspx" class="button" target="_blank"><i class="fas fa-university"></i></a>
+        <a href="https://web.aou.edu.lb/Pages/default.aspx" class="button" target="_blank"><i class="fa-solid fa-link"></i></a>
       </div>
       <div class="footer-p">
         <p>&copy; 2024 AOU Arab Open University || All rights reserved.</p>
