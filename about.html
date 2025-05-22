@@ -14,10 +14,10 @@
     type="image/x-icon"
   />
 
-    <link rel="stylesheet" href="aboutstyles.css" />
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/aboutstyles.css" />
+    <link rel="stylesheet" href="css/styles.css">
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
   </head>
   <body>
@@ -292,12 +292,23 @@
             </p>
           </div>
         </div>
+        <button class="team-section-button" onclick="meet_our_team();">meet our team</button>
       </div>
     </section>
 
+<!-- Custom Alert Box -->
+<div id="customAlertTeamImage">
+  <div class="custom-alert-content">
+    <img src="images/IEEE team.jpg" alt="IEEE Team">
+    <button class="close-btn" onclick="close_btn();">×</button>
+  </div>
+</div>
+
+
+
     <!-- footer -->
     <footer id="dynamic-footer">
-      <script src="header&footer.js"></script>
+      <script src="js/header&footer.js"></script>
     </footer>
 
     <script>
