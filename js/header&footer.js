@@ -32,29 +32,61 @@ document.addEventListener("DOMContentLoaded", () => {
 // footer content
 
 document.addEventListener("DOMContentLoaded", () => {
-    const footerContainer = document.getElementById("dynamic-footer");
-      const footerContent = `
-    <footer id="dynamic-footer">
-      <img src="images/white_logo-removebg-preview.png">
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="events.html">Events</a></li>
-          <li><a href="join.html">Join</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="social-media">
-        AOU:
-        <a href="https://www.instagram.com/aou_lebanon" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://web.aou.edu.lb/Pages/default.aspx" class="button" target="_blank"><i class="fa-solid fa-link"></i></a>
+  const footerContainer = document.getElementById("dynamic-footer");
+  const footerContent = `
+<footer class="ieee-footer">
+  <div class="footer-container">
+    <!-- Logo Section -->
+    <div class="footer-section logo-section">
+      <div class="logo-container">
+        <img src="../images/white_logo-removebg-preview.png" alt="IEEE AOU Logo" class="footer-logo">
       </div>
-      <div class="footer-p">
-        <p>&copy; 2024 AOU Arab Open University || All rights reserved.</p>
-        <p>Contact us: ieeeaou@gmail.com | Lebanon</p>
+      <p class="footer-description">IEEE Arab Open University Student Branch - Promoting technological innovation for the benefit of humanity.</p>
+    </div>
+
+    <!-- Quick Links Section -->
+    <div class="footer-section links-section">
+      <h3 class="footer-heading">Quick Links</h3>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About IEEE AOU</a></li>
+        <li><a href="events.html">Events & Activities</a></li>
+        <li><a href="join.html">Join IEEE AOU</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="https://www.aou.edu.lb" target="_blank">AOU LB Website</a></li>
+      </ul>
+    </div>
+
+    <!-- Social Media Section - IEEE AOU -->
+    <div class="footer-section social-section">
+      <h3 class="footer-heading">IEEE AOU Social</h3>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/ieee_aou_lebanon" aria-label="IEEE AOU Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://whatsapp.com/channel/0029VavRghFFCCoO0GJ0ca2B" aria-label="IEEE AOU WhatsApp"><i class="fab fa-whatsapp"></i></a>
       </div>
-    </footer>
+    </div>
+
+    <!-- Social Media Section - AOU University -->
+    <div class="footer-section social-section">
+      <h3 class="footer-heading">AOU University Social</h3>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/aou_lebanon" aria-label="AOU Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/school/arab-open-university/" aria-label="AOU LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.facebook.com/share/19fhRcp592/" aria-label="AOU Facebook"><i class="fab fa-facebook-f"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Copyright Section -->
+  <div class="copyright-section">
+    <p>&copy; <span id="year"></span> IEEE Arab Open University Student Branch. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script>
+  // Auto-update copyright year
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
     `;
-      footerContainer.innerHTML = footerContent;
-  });
+  footerContainer.innerHTML = footerContent;
+});
