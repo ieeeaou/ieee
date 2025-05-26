@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
     <!-- Logo Section -->
     <div class="footer-section logo-section">
       <div class="logo-container">
-        <img src="../images/white_logo-removebg-preview.png" alt="IEEE AOU Logo" class="footer-logo">
+        <img src="images/white_logo-removebg-preview.png" alt="IEEE AOU Logo" class="footer-logo">
       </div>
       <p class="footer-description">IEEE Arab Open University Student Branch - Promoting technological innovation for the benefit of humanity.</p>
     </div>
