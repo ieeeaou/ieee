@@ -21,8 +21,25 @@ function meet_our_team() {
   document.body.style.overflow = "hidden";
 }
 
-function close_btn() {
+function close_team() {
   const teamImg = document.getElementById("customAlertTeamImage");
   teamImg.style.display = "none";
   document.body.style.overflow = "auto";
 }
+
+function toggleOverlay(id) {
+  const overlay = document.getElementById(id);
+  if (overlay) {
+    overlay.style.display = "flex";
+    document.body.style.overflow = "hidden";
+  }
+}
+
+function close_btn(buttonElement) {
+  const overlay = buttonElement.closest(".continue-overlay");
+  if (overlay) {
+    overlay.style.display = "none";
+    document.body.style.overflow = "auto";
+  }
+}
+

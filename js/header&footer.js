@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <div class="logo-container">
         <img src="images/white_logo-removebg-preview.png" alt="IEEE AOU Logo" class="footer-logo">
       </div>
-      <p class="footer-description">IEEE Arab Open University Student Branch - Promoting technological innovation for the benefit of humanity.</p>
+      <p class="footer-description">IEEE Arab Open University Student Branch <br> Promoting technological innovation for the benefit of humanity.</p>
     </div>
 
     <!-- Quick Links Section -->

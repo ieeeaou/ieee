@@ -108,13 +108,11 @@
             innovation, educate the public, and foster growth in domains like
             electrical engineering, computer science, and telecommunications.
           </p>
-          <a href="#continueOverlayAbout">
-            <button>Continue Reading...</button>
-          </a>
+            <button onclick="toggleOverlay('continueOverlayAbout')">Continue Reading...</button>
         </div>
       </div>
       <div id="continueOverlayAbout" class="continue-overlay">
-        <a href="#" class="close-btn">×</a>
+        <button class="close-btn" onclick="close_btn(this)">×</button>
         <p>
           The Institute of Electrical and Electronics Engineers (IEEE) is a
           global professional organization dedicated to advancing innovation and
@@ -161,13 +159,11 @@
             conferences, journals, and technical standards that shape industries
             worldwide.
           </p>
-          <a href="#continueOverlayHistory">
-            <button>Continue Reading...</button>
-          </a>
+            <button onclick="toggleOverlay('continueOverlayAbout2')">Continue Reading...</button>
         </div>
       </div>
-      <div id="continueOverlayHistory" class="continue-overlay">
-        <a href="#" class="close-btn">×</a>
+      <div id="continueOverlayAbout2" class="continue-overlay">
+        <button class="close-btn" onclick="close_btn(this)">×</button>
         <p>
           The Institute of Electrical and Electronics Engineers (IEEE) was
           founded in 1963 through the merger of two earlier organizations: the
@@ -262,7 +258,7 @@
             </p>
           </div>
           <div class="team-member">
-            <h3>Shady Masry</h3>
+            <h3>Omar Kheir</h3>
             <h4>Vice-Chairperson</h4>
             <p>
               The Vice-Chair supports the Chair by managing delegated
@@ -272,7 +268,7 @@
             </p>
           </div>
           <div class="team-member">
-            <h3>Mohamad Kouzi</h3>
+            <h3>Yasser Kabbara</h3>
             <h4>Secretary</h4>
             <p>
               The Secretary documents meeting minutes, circulates agendas, and
@@ -282,7 +278,7 @@
             </p>
           </div>
           <div class="team-member">
-            <h3>Tony Al Chediac</h3>
+            <h3>Tony El Chediac</h3>
             <h4>Webmaster</h4>
             <p>
               This role involves maintaining the chapter’s website, ensuring
@@ -299,8 +295,8 @@
 <!-- Custom Alert Box -->
 <div id="customAlertTeamImage">
   <div class="custom-alert-content">
-    <img src="images/IEEE team.jpg" alt="IEEE Team">
-    <button class="close-btn" onclick="close_btn();">×</button>
+    <img src="images/IEEE TEAM.png" alt="IEEE Team">
+    <button class="close-btn" onclick="close_team();">×</button>
   </div>
 </div>
 
