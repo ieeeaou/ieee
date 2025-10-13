@@ -144,7 +144,7 @@ body {
 .event-image-wrapper img {
   max-width: 500px;
   max-height: 500px;
-  object-fit: cover;
+  object-fit: contain;
   overflow: hidden;
 }
 
@@ -186,3 +186,4 @@ body {
     padding: 15px;
   }
 }
+
