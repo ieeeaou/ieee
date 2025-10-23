@@ -198,6 +198,7 @@ body {
 }
 
 .event-flyer img {
+  cursor: pointer;
   max-width: 20%;
   height: auto;
   border-radius: 10px;

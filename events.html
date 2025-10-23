@@ -7,7 +7,7 @@
   <meta name="description"
     content="IEEE AOU Lebanon Student Branch official website, promoting technological innovation for the benefit of humanity." />
   <meta name="keywords"
-    content="IEEE, AOU, Arab Open University, Lebanon, Student Branch, Technology, Innovation, Engineering, Computer Science" />
+    content="ieee aou lebanon, aou lebanon, ieee aou, IEEE AOU, IEEE Lebanon, ieee lebanon, IEEE, AOU, Arab Open University, Lebanon, Student Branch, Technology, Innovation, Engineering, Computer Science" />
   <meta name="author" content="Eng. Tony El Chediac - by ChediX" />
   <title>IEEE AOU LEBANON - EVENTS</title>
   <link rel="shortcut icon" href="images/1-removebg-preview.png" type="image/x-icon" />
@@ -29,7 +29,7 @@
   <section id="hero">
     <div class="hero-container">
       <div class="hero-content">
-        <p>Events & News</p>
+        <p>Events & <br> Announcements</p>
       </div>
     </div>
   </section>
@@ -47,48 +47,10 @@
 
 
   <section id="EVENTS">
-    <div class="events-container">
-
-      <div class="event">
-        <h2>IEEE Day</h2>
-        <div class="event-image-wrapper">
-              <img src="images-events/ieee day coming soon.png" alt="event">
-          <div class="event-button">
-            <a href="#" onclick="alert('This feature is not available yet.')">
-              <button>Learn More</button>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="event">
-        <h2>Welcome Event 25</h2>
-        <div class="event-image-wrapper">
-          <img src="images-events/AOU Welcome day.png" alt="event">
-          <div class="event-button">
-            <a href="#" onclick="alert('This feature is not available yet.')">
-              <button>Learn More</button>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="event">
-        <h2>Join IEEE AOU</h2>
-        <div class="event-image-wrapper">
-          <img src="images-events/join ieee aou.png" alt="event">
-          <div class="event-button">
-            <a href="#" onclick="alert('This feature is not available yet.')">
-              <button>Learn More</button>
-            </a>
-          </div>
-        </div>
-      </div>
-
+    <div class="events-container" id="events-container">
+      <!-- content will be read from the script code in the bottom of the page -->
     </div>
   </section>
-
-
 
 
 
@@ -107,6 +69,35 @@
       }, 500);
     });
   </script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    fetch('js/event.json')
+      .then(res => res.json())
+      .then(data => {
+        const eventFlyer = document.getElementById('events-container');
+
+        data.events.forEach(event => {
+          const div = document.createElement('div');
+          div.className = 'event';
+          div.innerHTML = `
+            <h2>${event.title}</h2>
+            <div class="event-image-wrapper">
+              <img src="${event.image}" alt="${event.title}">
+              <div class="event-button">
+                <a href="eventContent.html?id=${event.id}">
+                <button>Learn More</button>
+                </a>
+              </div>
+            </div>
+          `;
+          eventFlyer.appendChild(div);
+        });
+      })
+      .catch(err => console.error('JSON ERROR:', err));
+  });
+</script>
+
 
 </body>
 

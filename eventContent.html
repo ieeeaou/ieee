@@ -1,0 +1,111 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description"
+        content="IEEE AOU Lebanon Student Branch official website, promoting technological innovation for the benefit of humanity." />
+    <meta name="keywords"
+        content="ieee aou lebanon, aou lebanon, ieee aou, IEEE AOU, IEEE Lebanon, ieee lebanon, IEEE, AOU, Arab Open University, Lebanon, Student Branch, Technology, Innovation, Engineering, Computer Science" />
+    <meta name="author" content="Eng. Tony El Chediac - by ChediX" />
+    <title>IEEE AOU LEBANON - EVENT CONTENT</title>
+    <link rel="shortcut icon" href="images/1-removebg-preview.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/eventContentstyle.css" />
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+    <div id="preloader">
+        <img src="images/ieeegifxback.gif" alt="">
+    </div>
+
+    <!-- Header Section -->
+    <header id="dynamic-header"></header>
+
+    <!-- hero section -->
+    <section id="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <p id="hero-content-p"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- BODY HOME CONTENT -->
+
+
+    <!-- <section id="not-found">
+    <i class="fa-regular fa-face-frown"></i>
+    <div class="not-found-container">
+        <h1>404</h1>
+        <p>Sorry, the page you're looking for cannot be found.</p>
+      </div>
+</section> -->
+
+
+    <!-- event content section -->
+    <div class="event-wrapper">
+        <img id="event-image" alt="Event Image">
+        <p id="event-content-p"></p>
+        <p id="event-content">Join Event Link:</p>
+        <a href="" id="event-content-a"></a>
+        <div class="event-button">
+            <a href="events.html">
+                <button>← Back to Events</button>
+            </a>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer id="dynamic-footer">
+        <script src="js/header&footer.js"></script>
+        <script src="js/script.js"></script>
+    </footer>
+
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function () {
+            loader.classList.add("fade-out");
+            setTimeout(function () {
+                loader.style.display = "none";
+            }, 500);
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const eventId = urlParams.get('id');
+
+            fetch('js/event.json')
+                .then(res => res.json())
+                .then(data => {
+                    const eventData = data.events.find(e => e.id == eventId);
+
+                    if (eventData) {
+                        document.getElementById('hero-content-p').textContent = eventData.title;
+                        document.getElementById('event-image').src = eventData.image;
+                        document.getElementById("event-content-p").innerHTML = eventData.content.replace(/\n/g, "<br>");
+
+                        const atag = document.getElementById('event-content-a');
+                        atag.href = eventData.a;          
+                        atag.textContent = eventData.a;   
+                        atag.target = "_blank";            
+                    } else {
+                        document.getElementById('event-title').textContent = "Event Not Found";
+                    }
+                })
+                .catch(err => console.error('JSON ERROR:', err));
+        });
+
+    </script>
+
+
+
+</body>
+
+</html>

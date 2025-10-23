@@ -3,6 +3,10 @@
   --color-2: #ffffff;
 }
 
+body{
+    font-family: Arial, sans-serif;
+}
+
 p{
     font-weight: 500;
 }
