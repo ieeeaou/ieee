@@ -1,0 +1,122 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description"
+        content="Games page for IEEE AOU Lebanon — playable demos, game-related events, challenges and interactive activities for students and members." />
+    <meta name="keywords"
+        content="IEEE AOU games, student games, game jam, game night, interactive activities, web games, educational games, IEEE AOU Lebanon" />
+    <meta name="author" content="IEEE AOU Lebanon / Eng. Tony El Chediac" />
+    <title>IEEE AOU LEBANON - GAMES</title>
+    <link rel="shortcut icon" href="images/1-removebg-preview.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/gamestyle.css" />
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+    <div id="preloader">
+        <img src="images/ieeegifxback.gif" alt="">
+    </div>
+
+    <!-- Header Section -->
+    <header id="dynamic-header"></header>
+
+    <!-- hero section -->
+    <section id="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <p>Games</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- BODY HOME CONTENT -->
+
+    <section id="games-content">
+        <div class="games-section">
+            <div class="games-grid">
+
+                <!-- 1rst game -->
+                <div class="game-card">
+                    <img src="images/racing.png" alt="Game 1">
+                    <h3>Racing</h3>
+                    <p>Be the first to escape from the robots that are approaching you.!</p>
+                    <a href="games/racing.html" class="play-button">Play Now</a>
+                </div>
+
+                <!-- 2nd game -->
+                <div class="game-card">
+                    <img src="images/robotics.png" alt="Game 2">
+                    <h3>Robotics</h3>
+                    <p>Be the first to escape from the robots that are approaching you.!</p>
+                    <a href="games/robotics.html" class="play-button">Play Now</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Custom Alert Modal -->
+    <div id="custom-alert" class="custom-alert">
+        <div class="custom-alert-content">
+            <p>This game is only playable on desktop devices!</p>
+            <button id="close-alert">OK</button>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer id="dynamic-footer">
+        <script src="js/header&footer.js"></script>
+        <script src="js/script.js"></script>
+    </footer>
+
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function () {
+            loader.classList.add("fade-out");
+            setTimeout(function () {
+                loader.style.display = "none";
+            }, 500);
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const playButtons = document.querySelectorAll(".play-button");
+            const customAlert = document.getElementById("custom-alert");
+            const closeAlert = document.getElementById("close-alert");
+
+            playButtons.forEach(function (btn) {
+                btn.addEventListener("click", function (e) {
+                    if (window.innerWidth <= 1200) {
+                        e.preventDefault();
+                        customAlert.style.display = "flex";
+                    }
+                });
+            });
+
+            // Close alert when button is clicked
+            closeAlert.addEventListener("click", function () {
+                customAlert.style.display = "none";
+            });
+
+            // Close alert when clicking outside the content
+            customAlert.addEventListener("click", function (e) {
+                if (e.target === customAlert) {
+                    customAlert.style.display = "none";
+                }
+            });
+        });
+    </script>
+
+
+
+</body>
+
+</html>

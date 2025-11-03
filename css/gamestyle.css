@@ -1,0 +1,238 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-1: #022d58;
+  --color-2: #ffffff;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: linear-gradient(
+      135deg,
+      transparent 0%,
+      transparent 6%,
+      rgba(71, 71, 71, 0.04) 6%,
+      rgba(71, 71, 71, 0.04) 22%,
+      transparent 22%,
+      transparent 100%
+    ),
+    linear-gradient(
+      45deg,
+      transparent 0%,
+      transparent 20%,
+      rgba(71, 71, 71, 0.04) 20%,
+      rgba(71, 71, 71, 0.04) 47%,
+      transparent 47%,
+      transparent 100%
+    ),
+    linear-gradient(
+      135deg,
+      transparent 0%,
+      transparent 24%,
+      rgba(71, 71, 71, 0.04) 24%,
+      rgba(71, 71, 71, 0.04) 62%,
+      transparent 62%,
+      transparent 100%
+    ),
+    linear-gradient(
+      45deg,
+      transparent 0%,
+      transparent 73%,
+      rgba(71, 71, 71, 0.04) 73%,
+      rgba(71, 71, 71, 0.04) 75%,
+      transparent 75%,
+      transparent 100%
+    ),
+    linear-gradient(90deg, rgb(255, 255, 255), rgb(255, 255, 255));
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  letter-spacing: 2px;
+}
+
+#not-found {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.not-found-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#not-found i {
+  color: var(--color-1);
+  font-size: 4em;
+}
+
+.not-found-container h1 {
+  margin: 50px;
+  font-weight: 900;
+  font-size: 5em;
+  color: var(--color-1);
+}
+
+.not-found-container p {
+  font-size: 2em;
+  margin: 20px;
+  text-align: center;
+  color: var(--color-1);
+  font-weight: bold;
+}
+
+/* ====== GAMES SECTION ====== */
+#games-content {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+}
+
+.games-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+  width: 90%;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+/* Individual game cards */
+.game-card {
+  background-color: var(--color-2);
+  border-radius: 15px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  padding-bottom: 20px;
+}
+
+.game-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.game-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: fill;
+  border-bottom: 4px solid var(--color-1);
+}
+
+.game-card h3 {
+  font-size: 1.4em;
+  margin: 15px;
+  color: var(--color-1);
+  font-weight: 700;
+}
+
+.game-card p {
+  font-size: 1em;
+  color: #333;
+  margin: 0 15px 20px;
+  line-height: 1.5;
+}
+
+.play-button {
+  display: inline-block;
+  margin: 20px;
+  padding: 10px 20px;
+  background-color: var(--color-1);
+  color: white;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.4s ease;
+}
+
+.play-button:hover {
+  background-color: var(--color-2);
+  color: var(--color-1);
+  box-shadow: 4px 4px var(--color-1);
+}
+
+
+/* Modal background */
+.custom-alert {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Modal content */
+.custom-alert-content {
+    background: #fff;
+    padding: 30px 20px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 300px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.custom-alert-content p {
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+
+.custom-alert-content button {
+    padding: 8px 20px;
+    border: none;
+    background: var(--color-1);
+    color: #fff;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.custom-alert-content button:hover {
+    background: #0056b3;
+}
+
+/* ====== RESPONSIVENESS ====== */
+@media (max-width: 768px) {
+  .games-grid {
+    gap: 25px;
+  }
+
+  .game-card img {
+    height: 250px;
+  }
+
+  .game-card h3 {
+    font-size: 1.2em;
+  }
+
+  .game-card p {
+    font-size: 0.9em;
+  }
+
+  .play-button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}

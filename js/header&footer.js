@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <a href="about.html">About</a>
                 <a href="events.html">Events</a>
                 <a href="join.html">Join</a>
+                <a href="games.html">Games</a>
                 <a href="index.html#faq">FAQ</a>
                 <a href="contact.html">Contact</a>
             </nav>
@@ -88,4 +89,31 @@ document.addEventListener("DOMContentLoaded", () => {
 </script>
     `;
   footerContainer.innerHTML = footerContent;
+});
+
+// back to top button
+document.addEventListener("DOMContentLoaded", () => {
+  const backToTopButton = document.createElement("button");
+  backToTopButton.id = "back-to-top";
+  backToTopButton.innerHTML = `<i class="fa-solid fa-arrow-up"></i>`;
+  backToTopButton.style.position = "fixed";
+  backToTopButton.style.bottom = "20px";
+  backToTopButton.style.right = "20px";
+  backToTopButton.style.width = "40px";
+  backToTopButton.style.height = "40px";
+  backToTopButton.style.backgroundColor = "var(--color-1)";
+  backToTopButton.style.color = "var(--color-2)";
+  backToTopButton.style.fontSize = "16px";
+  backToTopButton.style.display = "flex";
+  backToTopButton.style.alignItems = "center";
+  backToTopButton.style.justifyContent = "center";
+  backToTopButton.style.border = "2px solid var(--color-2)";
+  backToTopButton.style.borderRadius = "50%";
+
+  backToTopButton.style.zIndex = "10";
+  document.body.appendChild(backToTopButton);
+
+  backToTopButton.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
 });
