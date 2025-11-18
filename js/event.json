@@ -1,13 +1,6 @@
 {
   "events": [
     {
-      "id": 22025,
-      "image": "images-events/gaming workshop.png",
-      "title": "Game Jam",
-      "content": "Join us for an exciting and interactive Gaming Jam designed for passionate gamers, aspiring developers, and digital creatives! Whether you're a beginner or already experienced in game development, this jam is your chance to explore, grow, and challenge yourself. Step into the world of video games not just as a player, but as a creator — working under pressure, thinking fast, and building something awesome.\n\nDuring the Gaming Jam, you'll collaborate with teammates to brainstorm ideas, design concepts, and develop a fully playable game — all within a limited time frame. Use popular development tools, unleash your creativity, and dive deep into coding, art, storytelling, and gameplay mechanics. Expect intense hours of building, fun challenges, and a chance to showcase your final game to others.\n\nWhether you're dreaming of becoming a game developer or simply want to test your creative limits, this Gaming Jam is the perfect opportunity to connect, create, and compete.\n\nJoin the experience, make memories, and let your imagination take control. Let the jamming begin!",
-      "a": "https://forms.office.com/r/BGHVi65QfA"
-    },
-    {
       "id": 12025,
       "image": "images-events/aou ieee day 25.png",
       "title": "AOU IEEE DAY 25",
@@ -16,3 +9,4 @@
     }
   ]
 }
+
