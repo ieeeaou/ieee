@@ -1,6 +1,13 @@
 {
   "events": [
     {
+      "id": 22025,
+      "image": "images-events/gaming workshop.png",
+      "title": "Gaming Workshop",
+      "content": "Join us for an exciting and interactive Gaming Workshop designed for passionate gamers, aspiring developers, and digital creatives! Whether you're a beginner or already experienced in the world of gaming, this event is your chance to explore and grow. Get ready to step into the universe of video games from a new perspective — not just as a player, but as a creator.\n\nIn this workshop, you'll learn the fundamentals of game design and development, explore popular tools used in the industry, and engage in hands-on activities that sharpen your creativity and technical skills. You'll also get the chance to participate in live gaming challenges, competitions, and team-based tasks that will test both your strategic thinking and your collaboration.\n\nWhether you're dreaming of designing your own game or simply want to understand how your favorite games are made, this workshop is the perfect launchpad. Don’t miss this opportunity to connect, compete, and create in a fun and dynamic environment. Let the games begin!",
+      "a": "https://forms.office.com/r/BGHVi65QfA"
+    },
+    {
       "id": 12025,
       "image": "images-events/aou ieee day 25.png",
       "title": "AOU IEEE DAY 25",
