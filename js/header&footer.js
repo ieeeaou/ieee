@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   <!-- Copyright Section -->
   <div class="copyright-section">
-    <p>&copy; 2025<span id="year"></span> || IEEE Arab Open University Student Branch. || All Rights Reserved.</p>
+    <p>&copy; 2026<span id="year"></span> || IEEE Arab Open University Student Branch. || All Rights Reserved.</p>
   </div>
 </footer>
 

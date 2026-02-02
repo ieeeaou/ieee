@@ -50,6 +50,43 @@
   text-decoration: underline;
 }
 
+/* not found message */
+#not-found {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.not-found-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#not-found i {
+  color: var(--color-1);
+  font-size: 4em;
+}
+
+.not-found-container h1 {
+  margin: 50px;
+  font-weight: 900;
+  font-size: 5em;
+  color: var(--color-1);
+}
+
+.not-found-container p {
+  font-size: 2em;
+  margin: 20px;
+  text-align: center;
+  color: var(--color-1);
+  font-weight: bold;
+}
+
+
 /* Optional back button */
 .back-btn {
   display: inline-block;

@@ -1,18 +1,4 @@
 {
   "events": [
-    {
-      "id": 22025,
-      "image": "images-events/gamejam.png",
-      "title": "Game Jam",
-      "content": "Join us for an exciting and interactive Gaming Jam designed for passionate gamers, aspiring developers, and digital creatives! Whether you're a beginner or already experienced in game development, this jam is your chance to explore, grow, and challenge yourself. Step into the world of video games not just as a player, but as a creator working under pressure, thinking fast, and building something awesome.\n\nDuring the Gaming Jam, you'll collaborate with teammates to brainstorm ideas, design concepts, and develop a fully playable game all within a limited time frame. Use popular development tools, unleash your creativity, and dive deep into coding, art, storytelling, and gameplay mechanics. Expect intense hours of building, fun challenges, and a chance to showcase your final game to others.\n\nWhether you're dreaming of becoming a game developer or simply want to test your creative limits, this Gaming Jam is the perfect opportunity to connect, create, and compete.\n\nJoin the experience, make memories, and let your imagination take control. Let the jamming begin!\n\nDon't forget to bring your laptop with you.",
-      "a": "https://forms.office.com/r/BGHVi65QfA"
-    },
-    {
-      "id": 12025,
-      "image": "images-events/aou ieee day 25.png",
-      "title": "AOU IEEE DAY 25",
-      "content": "What is IEEE Day?\nIEEE Day is an annual global celebration held by the Institute of Electrical and Electronics Engineers (IEEE) to commemorate the first time IEEE members gathered to share their technical ideas — back in 1884.\n\nWhen is it celebrated?\n- It usually takes place on the first Tuesday of October each year.\n- In 2025, IEEE Day will be on Tuesday, October 7, 2025.\n- However, due to a couple of events organized by AOU, our team decided to celebrate it on the last Wednesday this year.\n\nPurpose:\n- Celebrate the role of IEEE and technology in advancing innovation for the benefit of humanity.\n- Unite IEEE members worldwide through local and virtual events.\n- Promote professional networking, technical sessions, competitions, and volunteering.\n\nActivities may include:\n- Tech talks\n- Student competitions\n- Games",
-      "a": "https://forms.office.com/r/ZRe6a8qaXg"
-    }
   ]
 }

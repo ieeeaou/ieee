@@ -37,17 +37,20 @@
     <!-- BODY HOME CONTENT -->
 
 
-    <!-- <section id="not-found">
-    <i class="fa-regular fa-face-frown"></i>
-    <div class="not-found-container">
-        <h1>404</h1>
-        <p>Sorry, the page you're looking for cannot be found.</p>
-      </div>
-</section> -->
+    <!-- correct this when we add a new event -->
+    <section id="not-found">
+        <i class="fa-regular fa-face-frown"></i>
+        <div class="not-found-container">
+            <h1>404</h1>
+            <p>Sorry, the page you're looking for cannot be found.</p>
+        </div>
+    </section>
 
 
     <!-- event content section -->
-    <div class="event-wrapper">
+    <!-- correct this when we add a new event -->
+
+    <!-- <div class="event-wrapper">
         <img id="event-image" alt="Event Image">
         <p id="event-content-p"></p>
         <p id="event-content">Join Event Link:</p>
@@ -57,7 +60,7 @@
                 <button>← Back to Events</button>
             </a>
         </div>
-    </div>
+    </div> -->
 
 
     <!-- footer -->
@@ -96,7 +99,7 @@
                         atag.textContent = eventData.a;   
                         atag.target = "_blank";            
                     } else {
-                        document.getElementById('event-title').textContent = "Event Not Found";
+                        document.getElementById('event-title').textContent = "404 Event Not Found";
                     }
                 })
                 .catch(err => console.error('JSON ERROR:', err));
