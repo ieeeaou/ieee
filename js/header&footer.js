@@ -11,14 +11,14 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="part2"></div>
         </section>
         <section id="header2">
-            <nav class="navlinks" id="navlinks" style="text-decoration: none;">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="events.html">Events</a>
-                <a href="join.html">Join</a>
-                <a href="games.html">Games</a>
-                <a href="index.html#faq">FAQ</a>
-                <a href="contact.html">Contact</a>
+            <nav class="navlinks" id="navlinks">
+                <a href="index.html" style="text-decoration: none;">Home</a>
+                <a href="about.html" style="text-decoration: none;">About</a>
+                <a href="events.html" style="text-decoration: none;">Events</a>
+                <a href="join.html" style="text-decoration: none;">Join</a>
+                <a href="games.html" style="text-decoration: none;">Games</a>
+                <a href="index.html#faq" style="text-decoration: none;">FAQ</a>
+                <a href="contact.html" style="text-decoration: none;">Contact</a>
             </nav>
             <div class="hamburger" id="hamburger">
             </div>
