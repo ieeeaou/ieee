@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="part2"></div>
         </section>
         <section id="header2">
-            <nav class="navlinks" id="navlinks">
+            <nav class="navlinks" id="navlinks" style="text-decoration: none;">
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="events.html">Events</a>
