@@ -54,7 +54,6 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  letter-spacing: 2px;
 }
 
 #not-found {
@@ -186,3 +185,4 @@ body {
     padding: 15px;
   }
 }
+
