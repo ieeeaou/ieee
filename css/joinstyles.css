@@ -16,7 +16,6 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  letter-spacing: 2px;
   color: black;
   display: flex;
   flex-direction: column;
@@ -97,3 +96,4 @@ main {
     margin-top: 70px;
   }
 }
+
