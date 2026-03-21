@@ -8,7 +8,7 @@
     content="IEEE AOU Lebanon Student Branch official website, promoting technological innovation for the benefit of humanity." />
   <meta name="keywords"
     content="ieee aou lebanon, aou lebanon, ieee aou, IEEE AOU, IEEE Lebanon, ieee lebanon, IEEE, AOU, Arab Open University, Lebanon, Student Branch, Technology, Innovation, Engineering, Computer Science" />
-  <meta name="author" content="Eng. Tony El Chediac - by ChediX" />
+  <meta name="author" content="Eng. Tony El Chediac" />
   <title>IEEE AOU LEBANON - EVENTS</title>
   <link rel="shortcut icon" href="images/1-removebg-preview.png" type="image/x-icon" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -36,21 +36,19 @@
 
   <!-- BODY HOME CONTENT -->
 
-  <!-- correct this when we add a new event -->
+
   <section id="not-found">
-    <i class="fa-regular fa-face-frown"></i>
+    <i class="fa-solid fa-calendar-xmark"></i>
     <div class="not-found-container">
-        <h1>404</h1>
-        <p>Sorry, the page you're looking for cannot be found.</p>
-      </div>
-</section>
-
-
-  <section id="EVENTS">
-    <div class="events-container" id="events-container">
-      <!-- content will be read from the script code in the bottom of the page -->
+      <p>Events cannot be found. <br><br>It can be because no events right now <br> or contact us</p>
     </div>
   </section>
+
+  <!-- content will be read from the script code in the bottom of the page -->
+  <!-- <section id="EVENTS">
+    <div class="events-container" id="events-container">
+  </div>
+  </section> -->
 
 
 
@@ -70,17 +68,17 @@
     });
   </script>
 
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    fetch('js/event.json')
-      .then(res => res.json())
-      .then(data => {
-        const eventFlyer = document.getElementById('events-container');
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      fetch('js/event.json')
+        .then(res => res.json())
+        .then(data => {
+          const eventFlyer = document.getElementById('events-container');
 
-        data.events.forEach(event => {
-          const div = document.createElement('div');
-          div.className = 'event';
-          div.innerHTML = `
+          data.events.forEach(event => {
+            const div = document.createElement('div');
+            div.className = 'event';
+            div.innerHTML = `
             <h2>${event.title}</h2>
             <div class="event-image-wrapper">
               <img src="${event.image}" alt="${event.title}">
@@ -91,12 +89,12 @@
               </div>
             </div>
           `;
-          eventFlyer.appendChild(div);
-        });
-      })
-      .catch(err => console.error('JSON ERROR:', err));
-  });
-</script>
+            eventFlyer.appendChild(div);
+          });
+        })
+        .catch(err => console.error('JSON ERROR:', err));
+    });
+  </script>
 
 
 </body>

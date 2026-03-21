@@ -12,13 +12,13 @@ document.addEventListener("DOMContentLoaded", () => {
         </section>
         <section id="header2">
             <nav class="navlinks" id="navlinks">
-                <a href="index.html" style="text-decoration: none;">Home</a>
-                <a href="about.html" style="text-decoration: none;">About</a>
-                <a href="events.html" style="text-decoration: none;">Events</a>
-                <a href="join.html" style="text-decoration: none;">Join</a>
-                <a href="games.html" style="text-decoration: none;">Games</a>
-                <a href="index.html#faq" style="text-decoration: none;">FAQ</a>
-                <a href="contact.html" style="text-decoration: none;">Contact</a>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="events.html">Events</a>
+                <a href="join.html">Join</a>
+                <a href="games.html">Games</a>
+                <a href="index.html#faq">FAQ</a>
+                <a href="contact.html">Contact</a>
             </nav>
             <div class="hamburger" id="hamburger">
             </div>
@@ -79,8 +79,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
   <!-- Copyright Section -->
   <div class="copyright-section">
-    <p>&copy; 2026<span id="year"></span> || IEEE Arab Open University Student Branch. || All Rights Reserved.</p>
-  </div>
+    <p>&copy; 2025<span id="year"></span> || IEEE Arab Open University Student Branch. || All Rights Reserved.</p>
+        <!-- developed by chedilex -->
+        <p class="copyrightchedix" style="margin-top: 10px; color: rgba(255, 255, 255, 0.7); font-size: 0.8rem; display: flex; justify-content: center; align-items: center;">
+            Developed by
+            <a href="https://chedilex.pages.dev/" style="display: flex; align-items: center; text-decoration: none; color: rgba(255, 255, 255, 0.7);">
+                <img src="https://lh3.googleusercontent.com/u/0/d/1FcuIbslkUGQmfqVicOfyHkeB3dlJ16v5" alt="chedix logo" style="height:20px;">
+                <span style="color: rgba(255, 255, 255, 0.7);">Chedilex</span>
+            </a>
+        </p>
+    </div>
+
 </footer>
 
 <script>

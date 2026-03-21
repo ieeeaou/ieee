@@ -7,13 +7,49 @@
 :root {
   --color-1: #022d58;
   --color-2: #ffffff;
-  --location-color:rgb(255, 0, 0);
-
+  --location-color: rgb(255, 0, 0);
 }
 
 body {
   font-family: Arial, sans-serif;
-  background-image: linear-gradient(135deg, transparent 0%, transparent 6%,rgba(71, 71, 71,0.04) 6%, rgba(71, 71, 71,0.04) 22%,transparent 22%, transparent 100%),linear-gradient(45deg, transparent 0%, transparent 20%,rgba(71, 71, 71,0.04) 20%, rgba(71, 71, 71,0.04) 47%,transparent 47%, transparent 100%),linear-gradient(135deg, transparent 0%, transparent 24%,rgba(71, 71, 71,0.04) 24%, rgba(71, 71, 71,0.04) 62%,transparent 62%, transparent 100%),linear-gradient(45deg, transparent 0%, transparent 73%,rgba(71, 71, 71,0.04) 73%, rgba(71, 71, 71,0.04) 75%,transparent 75%, transparent 100%),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255));
+  background-image:
+    linear-gradient(
+      135deg,
+      transparent 0%,
+      transparent 6%,
+      rgba(71, 71, 71, 0.04) 6%,
+      rgba(71, 71, 71, 0.04) 22%,
+      transparent 22%,
+      transparent 100%
+    ),
+    linear-gradient(
+      45deg,
+      transparent 0%,
+      transparent 20%,
+      rgba(71, 71, 71, 0.04) 20%,
+      rgba(71, 71, 71, 0.04) 47%,
+      transparent 47%,
+      transparent 100%
+    ),
+    linear-gradient(
+      135deg,
+      transparent 0%,
+      transparent 24%,
+      rgba(71, 71, 71, 0.04) 24%,
+      rgba(71, 71, 71, 0.04) 62%,
+      transparent 62%,
+      transparent 100%
+    ),
+    linear-gradient(
+      45deg,
+      transparent 0%,
+      transparent 73%,
+      rgba(71, 71, 71, 0.04) 73%,
+      rgba(71, 71, 71, 0.04) 75%,
+      transparent 75%,
+      transparent 100%
+    ),
+    linear-gradient(90deg, rgb(255, 255, 255), rgb(255, 255, 255));
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -28,12 +64,11 @@ body {
   height: 60dvh;
 }
 
-#aou-map img{
+#aou-map img {
   height: 100%;
   width: auto;
   object-fit: cover;
 }
-
 
 /* ieee section */
 .ieee-section {
@@ -58,7 +93,7 @@ body {
 }
 
 .ieee-content h2::after {
-  content: '';
+  content: "";
   display: block;
   width: 60%;
   height: 2px;
@@ -132,82 +167,82 @@ body {
   cursor: pointer;
 }
 
-
-
 /* team section */
 
 .team-section {
-    padding: 60px 20px;
-    margin: 60px 0;
-    border-radius: 15px;
-    text-align: center;
-  }
-  
-  .team-section h2 {
-    color: var(--color-1);
-    text-align: center;
-    margin-bottom: 40px;
-    font-size: 32px;
-    font-weight: 600;
-    border-bottom: 3px solid var(--color-1);
-    display: inline-block;
-    padding-bottom: 10px;
-  }
-  
-  .team-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
-    max-width: 1200px;
-    margin: auto;
-  }
-  
-  .team-member {
-    flex: 1 1 calc(50% - 20px);
-    background-color: #ffffff;
-    border-radius: 15px;
-    padding: 30px;
-    text-align: center;
-    color: #333;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .team-member:hover {
-    transform: scale(1.02);
-  }
-  
-  .team-image {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-bottom: 15px;
-    object-fit: cover;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .team-member h3 {
-    font-size: 22px;
-    font-weight: 600;
-    color: var(--color-1);
-    margin-bottom: 10px;
-  }
-  
-  .team-member h4 {
-    font-size: 16px;
-    color: #666;
-    margin-bottom: 10px;
-  }
-  
-  .team-member p {
-    color: #555;
-    line-height: 1.6;
-    font-size: 18px;
-    font-weight: 500;
-  }
+  padding: 60px 20px;
+  margin: 60px 0;
+  border-radius: 15px;
+  text-align: center;
+}
 
-  .team-section-button {
+.team-section h2 {
+  color: var(--color-1);
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 32px;
+  font-weight: 600;
+  border-bottom: 3px solid var(--color-1);
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.team-member {
+  flex: 1 1 calc(50% - 20px);
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+  transform: scale(1.02);
+}
+
+.team-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-member h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--color-1);
+  margin-bottom: 10px;
+}
+
+.team-member h4 {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.team-member p {
+  color: #555;
+  line-height: 1.6;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.team-section-button {
   margin-top: 80px;
   padding: 10px 20px;
   background-color: var(--color-1);
@@ -225,8 +260,7 @@ body {
   box-shadow: 4px 4px var(--color-1);
 }
 
-
-#customAlertTeamImage{
+#customAlertTeamImage {
   display: none;
   justify-content: center;
   align-items: center;
@@ -264,23 +298,18 @@ body {
   cursor: pointer;
 }
 
-
-
-
 /* reponsive screen */
 
 @media (max-width: 480px) {
-
   /* aou arab world map section */
-#aou-map {
-  margin-top: 10px;
-  height: 50dvh;
-}
+  #aou-map {
+    margin-top: 10px;
+    height: 50dvh;
+  }
 
-#aou-map img{
-  height: 60%;
-}
-
+  #aou-map img {
+    height: 60%;
+  }
 
   #tooltip {
     font-size: 12px;
@@ -288,24 +317,11 @@ body {
 
   /* about section */
 
-  .ieee-section{
+  .ieee-section {
     margin: 20px 0px 40px 0px;
   }
 
   .team-member {
     flex-basis: 100%;
   }
-
-  .team-member h3 {
-    font-size: 18px;
-  }
-
-  .team-member h4 {
-    font-size: 14px;
-  }
-
-  .team-member p {
-    font-size: 13px;
-  }
 }
-

@@ -12,7 +12,8 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       135deg,
       transparent 0%,
       transparent 6%,
@@ -60,7 +61,9 @@ body {
   display: flex;
   justify-content: left;
   align-items: center;
-  background: linear-gradient(rgb(0,0,0,0.5), rgb(0,0,0,0.5)), url("https://wallpapercave.com/wp/wp2456257.jpg");
+  background:
+    linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),
+    url("https://wallpapercave.com/wp/wp2456257.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -96,7 +99,9 @@ body {
   overflow: hidden;
   border-right: 2px solid var(--color-2);
   width: 0;
-  animation: typing 3s steps(30) infinite, blink-caret 0.75s ease infinite;
+  animation:
+    typing 3s steps(30) infinite,
+    blink-caret 0.75s ease infinite;
 }
 
 @keyframes typing {
@@ -104,7 +109,7 @@ body {
     width: 0;
   }
   to {
-    width: 64%;
+    width: 60%;
   }
 }
 
@@ -160,7 +165,7 @@ body {
 
 /* upcoming events */
 
-#upcoming-events{
+#upcoming-events {
   margin-top: 50px;
 }
 
@@ -182,7 +187,7 @@ body {
 }
 
 .events-section h2::after {
-  content: '';
+  content: "";
   display: block;
   width: 60%;
   height: 2px;
@@ -190,7 +195,7 @@ body {
   margin-top: 10px;
 }
 
-.event-flyer{
+.event-flyer {
   display: flex;
   gap: 20px;
   overflow-x: auto;
@@ -204,11 +209,11 @@ body {
   margin-bottom: 20px;
 }
 
-.event-flyer p{
+.event-flyer p {
   margin: 30px;
 }
 
-.event-button a button{
+.event-button a button {
   width: 20vh;
   height: 50px;
   font-size: 15px;
@@ -252,7 +257,7 @@ body {
 }
 
 .about-content h2::after {
-  content: '';
+  content: "";
   display: block;
   width: 60%;
   height: 2px;
@@ -288,7 +293,7 @@ body {
 }
 
 .faq-section h2::after {
-  content: '';
+  content: "";
   display: block;
   width: 60%;
   height: 2px;
@@ -342,7 +347,9 @@ body {
   overflow: hidden;
   padding: 0 20px;
   background: #fff;
-  transition: max-height 0.4s ease, padding 0.4s ease;
+  transition:
+    max-height 0.4s ease,
+    padding 0.4s ease;
 }
 
 .faq-item.active .faq-answer {
@@ -355,44 +362,6 @@ body {
   line-height: 1.6;
   color: #555;
 }
-
-/* sponsors */
-#sponsors {
-  padding: 60px 0;
-  background: #fff;
-  margin-bottom: 50px;
-}
-
-.sponsors-section{
-  padding: 0px 30px;
-}
-
-.sponsors-section h2 {
-  font-size: 2rem;
-  text-align: left;
-  margin-bottom: 40px;
-  color: #022d58;
-  display: inline-block;
-  position: relative;
-}
-
-.sponsors-section h2::after {
-  content: '';
-  display: block;
-  width: 60%;
-  height: 2px;
-  background-color: var(--color-1);
-  margin-top: 10px;
-}
-
-.sponsor-logos img {
-  height: 70px;
-  margin: 0 40px;
-  vertical-align: middle;
-}
-
-
-
 
 @media only screen and (max-width: 768px) {
   #Home {
@@ -411,7 +380,7 @@ body {
   }
 
   .typing-effect {
-    font-size: 0.8rem;
+    font-size: 15px;
   }
 
   @keyframes typing {
@@ -419,7 +388,7 @@ body {
       width: 0;
     }
     to {
-      width: 90%;
+      width: 83%;
     }
   }
 
@@ -430,13 +399,13 @@ body {
     font-size: 12px;
   }
 
-  .event-button a button{
+  .event-button a button {
     margin-top: 30px;
     width: 17vh;
     height: 45px;
     font-size: 12px;
   }
-  
+
   .events-section h2 {
     font-size: 1.75rem;
   }
@@ -449,8 +418,7 @@ body {
     font-size: 1.75rem;
   }
 
-  .faq-section h2{
+  .faq-section h2 {
     font-size: 1.75rem;
   }
 }
-

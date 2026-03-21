@@ -8,7 +8,7 @@
         content="IEEE AOU Lebanon Student Branch official website, promoting technological innovation for the benefit of humanity." />
     <meta name="keywords"
         content="ieee aou lebanon, aou lebanon, ieee aou, IEEE AOU, IEEE Lebanon, ieee lebanon, IEEE, AOU, Arab Open University, Lebanon, Student Branch, Technology, Innovation, Engineering, Computer Science" />
-    <meta name="author" content="Eng. Tony El Chediac - by ChediX" />
+    <meta name="author" content="Eng. Tony El Chediac" />
     <title>IEEE AOU LEBANON - EVENT CONTENT</title>
     <link rel="shortcut icon" href="images/1-removebg-preview.png" type="image/x-icon" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -37,7 +37,6 @@
     <!-- BODY HOME CONTENT -->
 
 
-    <!-- correct this when we add a new event -->
     <section id="not-found">
         <i class="fa-regular fa-face-frown"></i>
         <div class="not-found-container">
@@ -48,10 +47,13 @@
 
 
     <!-- event content section -->
-    <!-- correct this when we add a new event -->
-
     <!-- <div class="event-wrapper">
         <img id="event-image" alt="Event Image">
+        <div class="eventdetails">
+            <p id="eventDay" class="eventdetailsp"></p>
+            <p id="eventTime" class="eventdetailsp"></p>
+            <p id="eventLocation" class="eventdetailsp"></p>
+        </div>
         <p id="event-content-p"></p>
         <p id="event-content">Join Event Link:</p>
         <a href="" id="event-content-a"></a>
@@ -82,7 +84,16 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const urlParams = new URLSearchParams(window.location.search);
-            const eventId = urlParams.get('id');
+            let eventId = urlParams.get('id');
+            if (!eventId) {
+                const pathSegments = window.location.pathname.split('/');
+                eventId = pathSegments.pop() || pathSegments.pop();
+            }
+
+            if (!eventId) {
+                console.error("No Event ID found in URL");
+                return;
+            }
 
             fetch('js/event.json')
                 .then(res => res.json())
@@ -92,14 +103,17 @@
                     if (eventData) {
                         document.getElementById('hero-content-p').textContent = eventData.title;
                         document.getElementById('event-image').src = eventData.image;
+                        document.getElementById('eventDay').innerHTML = '<i class="fa-solid fa-calendar"></i> ' + eventData.day;
+                        document.getElementById('eventTime').innerHTML = '<i class="fa-solid fa-clock"></i> ' + eventData.time;
+                        document.getElementById('eventLocation').innerHTML = '<i class="fa-solid fa-location-dot"></i> ' + eventData.location;
                         document.getElementById("event-content-p").innerHTML = eventData.content.replace(/\n/g, "<br>");
 
                         const atag = document.getElementById('event-content-a');
-                        atag.href = eventData.a;          
-                        atag.textContent = eventData.a;   
-                        atag.target = "_blank";            
+                        atag.href = eventData.a;
+                        atag.textContent = eventData.a;
+                        atag.target = "_blank";
                     } else {
-                        document.getElementById('event-title').textContent = "404 Event Not Found";
+                        document.getElementById('event-title').textContent = "Event Not Found";
                     }
                 })
                 .catch(err => console.error('JSON ERROR:', err));

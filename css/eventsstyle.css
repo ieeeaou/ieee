@@ -11,7 +11,8 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       135deg,
       transparent 0%,
       transparent 6%,
@@ -58,37 +59,26 @@ body {
 
 #not-found {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  height: 100vh;
-}
-
-.not-found-container {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  flex-direction: column;
+  justify-content: center;
+  height: 50vh;
+  text-align: center;
+  color: var(--color-1);
 }
 
 #not-found i {
-  color: var(--color-1);
-  font-size: 4em;
+  font-size: 3rem;
+  margin-bottom: 20px;
 }
 
-.not-found-container h1 {
-  margin: 50px;
-  font-weight: 900;
-  font-size: 5em;
-  color: var(--color-1);
+#not-found h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
 }
 
-.not-found-container p {
-  font-size: 2em;
-  margin: 20px;
-  text-align: center;
-  color: var(--color-1);
-  font-weight: bold;
+#not-found p {
+  font-size: 15px;
 }
 
 /* HOME CONTENT */
@@ -99,7 +89,7 @@ body {
   box-sizing: border-box;
 }
 
-.events-container{
+.events-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -121,7 +111,7 @@ body {
 }
 
 .event h2::after {
-  content: '';
+  content: "";
   display: block;
   width: 60%;
   height: 2px;
@@ -147,7 +137,7 @@ body {
   overflow: hidden;
 }
 
-.event-button a button{
+.event-button a button {
   width: 15vh;
   height: 40px;
   font-size: 12px;
@@ -171,7 +161,6 @@ body {
 /* reponsive screen */
 
 @media (max-width: 480px) {
-
   #EVENTS {
     margin: 3em 2em 50px 2em;
     padding: 20px;
@@ -185,4 +174,3 @@ body {
     padding: 15px;
   }
 }
-
