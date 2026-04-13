@@ -79,24 +79,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
   <!-- Copyright Section -->
   <div class="copyright-section">
-    <p>&copy; 2025<span id="year"></span> || IEEE Arab Open University Student Branch. || All Rights Reserved.</p>
-        <!-- developed by chedilex -->
-        <p class="copyrightchedix" style="margin-top: 10px; color: rgba(255, 255, 255, 0.7); font-size: 0.8rem; display: flex; justify-content: center; align-items: center;">
-            Developed by
-            <a href="https://chedilex.pages.dev/" style="display: flex; align-items: center; text-decoration: none; color: rgba(255, 255, 255, 0.7);">
-                <img src="https://lh3.googleusercontent.com/u/0/d/1FcuIbslkUGQmfqVicOfyHkeB3dlJ16v5" alt="chedix logo" style="height:20px;">
-                <span style="color: rgba(255, 255, 255, 0.7);">Chedilex</span>
-            </a>
-        </p>
-    </div>
+    <p>&copy; 2026<span id="year"></span> || IEEE Arab Open University Student Branch. || All Rights Reserved.</p>
+    <div class="chedilex-footer-container"></div>
+  </div>
 
 </footer>
-
-<script>
-  // Auto-update copyright year
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
     `;
+  const chedilexScript = document.createElement("script");
+  chedilexScript.src =
+    "https://cdn.jsdelivr.net/gh/Tonyelchediac/chedilex-assets@main/footer.js?v=1.1";
+  document.body.appendChild(chedilexScript);
   footerContainer.innerHTML = footerContent;
 });
 
