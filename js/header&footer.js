@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
     `;
   const chedilexScript = document.createElement("script");
   chedilexScript.src =
-    "https://cdn.jsdelivr.net/gh/Tonyelchediac/chedilex-assets@main/footer.js?v=1.1";
+    "https://cdn.jsdelivr.net/gh/chedilex/chedilex-assets-footer@main/footer.js?v=1.1";
   document.body.appendChild(chedilexScript);
   footerContainer.innerHTML = footerContent;
 });
